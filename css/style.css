@@ -4,16 +4,13 @@
      --primary-color: #000000;
      --secondary-color: #ffffff;
      --tertiary-color: #AC242D;
+     --primary-color-rgb: 0,0,0;
      --quaternary-color: #E4E4E4;
 }
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
@@ -25,7 +22,7 @@
 body {
      color: var(--primary-color);
      font-size: 14px;
-     font-family: 'Montserrat', sans-serif;
+     font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
      background-color: var(--secondary-color);
@@ -59,7 +56,8 @@ h6 {
      font-weight: normal;
      line-height: normal;
      color: var(--primary-color);
-     margin: 0
+     margin: 0;
+     font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -320,11 +318,21 @@ header .menu-btn {
 header.sticky {
      background: rgba(var(--primary-color-rgb), 0.95);
      padding: 5px 0;
-     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 header.sticky .logo-img {
      max-height: 50px;
+}
+
+header.sticky .main-menu li a {
+     color: var(--secondary-color);
+     font-family: 'Poppins', sans-serif;
+}
+
+header.sticky .main-menu li a:hover,
+header.sticky .main-menu li a.active {
+     color: var(--tertiary-color);
 }
 
 /* Navigation Menu */
@@ -808,7 +816,7 @@ ul.email li img {
      line-height: 46px;
      color: var(--primary-color);
      text-transform: uppercase;
-     font-family: 'Playfair Display', serif;
+     font-family: 'Poppins', sans-serif;
      letter-spacing: 1px;
 }
 
@@ -1490,7 +1498,7 @@ ul.re_post li {
      font-weight: 600;
      margin-bottom: 15px;
      transition: color 0.3s ease;
-     font-family: 'Playfair Display', serif;
+     font-family: 'Poppins', sans-serif;
 }
 
 .blog_box:hover .blog_text h3 {
@@ -1670,7 +1678,7 @@ ul.re_post li {
      font-weight: 600;
      margin-bottom: 5px;
      color: var(--primary-color);
-     font-family: 'Playfair Display', serif;
+     font-family: 'Poppins', sans-serif;
 }
 
 .person_info p {
@@ -1758,9 +1766,9 @@ ul.re_post li {
 .contact_box_content h3 {
      font-size: 18px;
      font-weight: 600;
-     margin-bottom: 10px;
-     color: var(--primary-color);
-     font-family: 'Playfair Display', serif;
+     margin-bottom: 12px;
+     color: #333;
+     font-family: 'Poppins', sans-serif;
 }
 
 .contact_box_content p {
@@ -1814,7 +1822,7 @@ ul.re_post li {
      margin-bottom: 30px;
      color: var(--primary-color);
      text-align: center;
-     font-family: 'Playfair Display', serif;
+     font-family: 'Poppins', sans-serif;
      position: relative;
      display: inline-block;
 }
@@ -1973,7 +1981,7 @@ ul.social_icon_footer li a:hover {
     font-weight: 700;
     margin-bottom: 15px;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .breadcrumb {
@@ -1990,7 +1998,8 @@ ul.social_icon_footer li a:hover {
 }
 
 .breadcrumb-item.active {
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -2010,7 +2019,7 @@ ul.social_icon_footer li a:hover {
     font-weight: 700;
     margin-bottom: 20px;
     color: #333;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .section-subtitle {
@@ -2235,7 +2244,7 @@ footer .reader p i {
     padding-bottom: 15px;
     border-bottom: 2px solid var(--tertiary-color);
     display: inline-block;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .reference-card {
@@ -2295,7 +2304,7 @@ footer .reader p i {
     font-weight: 700;
     margin-bottom: 20px;
     color: #333;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .cta-section p {
@@ -2320,5 +2329,216 @@ footer .reader p i {
     .cta-section h2 {
         font-size: 28px;
     }
+}
+
+/* Çalışma Sürecimiz - Yeni Modern Tasarım */
+.process-section {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.process-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)),
+        linear-gradient(90deg, rgba(200, 200, 200, 0.1) 1px, transparent 1px),
+        linear-gradient(rgba(200, 200, 200, 0.1) 1px, transparent 1px);
+    background-size: 100%, 20px 20px, 20px 20px;
+    z-index: 0;
+}
+
+.process-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(172, 36, 45, 0.1) 2px, transparent 2px);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+    z-index: 0;
+}
+
+.process-section .section-title {
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.process-section .section-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 70px;
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.process-steps-container {
+    position: relative;
+    z-index: 1;
+}
+
+.process-steps-container::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(172, 36, 45, 0.1), rgba(172, 36, 45, 0.8), rgba(172, 36, 45, 0.1));
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .process-steps-container::after {
+        display: none;
+    }
+}
+
+.process-step {
+    position: relative;
+    padding: 30px 20px;
+    transition: all 0.4s ease-in-out;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    margin-bottom: 20px;
+    z-index: 2;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.process-step::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, rgba(172, 36, 45, 0.08), transparent);
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.process-step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: rgba(172, 36, 45, 0.2);
+}
+
+.process-step:hover::before {
+    height: 100%;
+}
+
+.process-icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(172, 36, 45, 0.1);
+    transition: all 0.4s ease-in-out;
+    border: 1px solid rgba(172, 36, 45, 0.05);
+}
+
+.process-step:hover .process-icon {
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(172, 36, 45, 0.2);
+    background: linear-gradient(145deg, #f9f9f9, #ffffff);
+}
+
+.process-icon i {
+    font-size: 36px;
+    color: var(--tertiary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.process-step:hover .process-icon i {
+    transform: rotateY(360deg);
+    color: var(--tertiary-color);
+}
+
+.step-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    background: var(--tertiary-color);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(172, 36, 45, 0.3);
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease;
+}
+
+.process-step:hover .step-number {
+    background: #333;
+    transform: scale(1.1);
+}
+
+.process-step h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.process-step h4::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--tertiary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.process-step:hover h4::after {
+    width: 50px;
+}
+
+.process-step:hover h4 {
+    color: var(--tertiary-color);
+}
+
+.process-step p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
 }
 
