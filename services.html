@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
    <head>
       <!-- basic -->
       <meta charset="utf-8">
@@ -8,10 +8,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>basco</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
+      <title>Hizmetlerimiz - Arceer Mimarlık</title>
+      <meta name="keywords" content="mimari hizmetler, iç mimarlık, konut projeleri, ticari projeler, mimari danışmanlık, arceer">
+      <meta name="description" content="Arceer Mimarlık olarak konut, ticari ve kurumsal projeler için kapsamlı mimari çözümler sunuyoruz. Özelleştirilmiş mimari tasarım, iç mekan tasarımı ve mimari danışmanlık hizmetlerimiz ile projelerinizi hayata geçiriyoruz.">
+      <meta name="author" content="Arceer Mimarlık">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- style css -->
@@ -19,10 +23,9 @@
       <!-- responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- awesome fontfamily -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
    </head>
    <!-- body -->
    <body class="main-layout inner_page">
@@ -33,47 +36,107 @@
       <!-- end loader -->
       <div id="mySidepanel" class="sidepanel">
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-         <a href="index.html">Home</a>
-         <a href="about.html">About</a>
-         <a href="services.html">Services</a>
-         <a href="contact.html">Contact</a>
+         <a href="index.html">Anasayfa</a>
+         <a href="about.html">Kurumsal</a>
+         <a href="services.html">Hizmetlerimiz</a>
+         <a href="projects.html">Projeler</a>
+         <a href="blog.html">Blog</a>
+         <a href="references.html">Referanslar</a>
+         <a href="contact.html">İletişim</a>
       </div>
       <!-- header -->
-      <header>
-         <!-- header inner -->
-         <div class="head-top">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-sm-3">
-                     <div class="logo">
-                        <a href="index.html"><img src="images/logo_footer.png" /></a>
-                     </div>
-                  </div>
-                  <div class="col-sm-9">
-                     <ul class="email text_align_right">
-                        <li class="d_none"> <i class="fa fa-map-marker" aria-hidden="true"></i>Location</a></li>
-                        <li class="d_none"><i class="fa fa-phone" aria-hidden="true"></i>+71  1234567890</a></li>
-                        <li class="d_none"> <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>demo@gmail.com</a></li>
-                        <li class="d_none"> <a href="#">Login <i class="fa fa-user" aria-hidden="true"></i></a> </li>
-                        <li class="d_none"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></li>
-                        <li> <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png"></button></li>
+      <header class="site-header">
+         <nav class="navbar">
+            <div class="container">
+               <div class="navbar-brand">
+                  <a href="index.html">
+                     <img src="logo.png" alt="Arceer Mimarlık Logo" class="logo-img">
+                  </a>
+               </div>
+               
+               <ul class="main-menu d-none d-lg-flex">
+                  <li><a href="index.html">Anasayfa</a></li>
+                  <li><a href="about.html">Kurumsal</a></li>
+                  <li><a href="services.html" class="active">Hizmetlerimiz</a></li>
+                  <li><a href="projects.html">Projeler</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="references.html">Referanslar</a></li>
+                  <li><a href="contact.html">İletişim</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <!-- end header -->
+    
+      <!-- Mobil Menü -->
+      <div id="mobileNav" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="index.html">Ana Sayfa</a>
+         <a href="about.html">Kurumsal</a>
+         <a href="services.html">Hizmetlerimiz</a>
+         <a href="projects.html">Projeler</a>
+         <a href="blog.html">Blog</a>
+         <a href="references.html">Referanslar</a>
+         <a href="contact.html">İletişim</a>
+      </div>
+    
+      <!-- page banner -->
+      <div class="page-banner">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="page-title">HİZMETLERİMİZ</h1>
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Hizmetlerimiz</li>
+                     </ol>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end page banner -->
+    
+      <!-- intro section -->
+      <div class="about-section section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about-content">
+                     <h2 class="section-title">Mimari Vizyonunuzu Hayata Geçiriyoruz</h2>
+                     <p class="lead">20 yıllık deneyimimizle hayallerinizi gerçeğe dönüştürüyoruz.</p>
+                     <p>Arceer Mimarlık olarak, müşterilerimizin ihtiyaçlarını ve isteklerini anlayarak, fonksiyonel, estetik ve sürdürülebilir mimari çözümler sunuyoruz. Her projeye özgün bir bakış açısıyla yaklaşarak, mekanların potansiyelini maksimum düzeyde kullanıyoruz.</p>
+                     <p>Konut projelerinden, ticari alanlara ve kurumsal yapılara kadar geniş bir yelpazede hizmet veriyor, her aşamada profesyonel ve yenilikçi çözümler sunuyoruz.</p>
+                     <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Özgün Mimari Tasarım</li>
+                        <li><i class="fas fa-check-circle"></i> İç Mekan Tasarımı</li>
+                        <li><i class="fas fa-check-circle"></i> Peyzaj Tasarımı</li>
+                        <li><i class="fas fa-check-circle"></i> Proje Yönetimi ve Danışmanlık</li>
                      </ul>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about-image">
+                     <img src="images/about_img.png" alt="Arceer Mimarlık Hizmetleri" class="img-fluid">
+                     <div class="experience-box">
+                        <span class="years">20+</span>
+                        <span class="text">Yıllık Deneyim</span>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
-      </header>
-      <!-- end header -->
+      </div>
+      <!-- end intro section -->
      
-      <!-- services -->
-      <div class="services_main">
+      <!-- services tabs -->
+      <div class="services_main section-padding bg-light">
          <div class="container">
             <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Services</h2>
-                     <span>It is a long established fact that a reader will be distracted by the readable content </span>
-                  </div>
+               <div class="col-md-12 text-center mb-5">
+                  <h2 class="section-title">Hizmetlerimiz</h2>
+                  <p class="section-subtitle">İhtiyaçlarınıza özel mimari çözümler</p>
                </div>
             </div>
             <div class="row">
@@ -81,156 +144,257 @@
                   <ul class="nav nav-tabs md-tabs border_none" id="myTabMD" role="tablist">
                      <li class="nav-item lisertab">
                         <a class="nav-link servi_tab active" id="home-tab-md" data-toggle="tab" href="#home-md" role="tab" aria-controls="home-md"
-                           aria-selected="true">RESIDENTAL</a>
+                           aria-selected="true">KONUT PROJELERİ</a>
                      </li>
                      <li class="nav-item lisertab">
                         <a class="nav-link servi_tab" id="profile-tab-md" data-toggle="tab" href="#profile-md" role="tab" aria-controls="profile-md"
-                           aria-selected="false">RETAIL DESIGN</a>
+                           aria-selected="false">TİCARİ PROJELER</a>
                      </li>
                      <li class="nav-item lisertab">
                         <a class="nav-link servi_tab" id="contact-tab-md" data-toggle="tab" href="#contact-md" role="tab" aria-controls="contact-md"
-                           aria-selected="false">SPACE ADAPTATION</a>
+                           aria-selected="false">PEYZAJ TASARIMI</a>
                      </li>
                   </ul>
                   <div class="tab-content card back_bg" id="myTabContentMD">
+                     <!-- KONUT PROJELERİ -->
                      <div class="tab-pane fade show active" id="home-md" role="tabpanel" aria-labelledby="home-tab-md">
+                        <div class="row mb-5">
+                           <div class="col-md-8 offset-md-2">
+                              <div class="service-intro text-center mb-5">
+                                 <h3>Ev Hayallerinizi Gerçeğe Dönüştürüyoruz</h3>
+                                 <p>Bireysel ihtiyaçlarınıza ve yaşam tarzınıza özel tasarlanmış konut projeleri ile hayalinizdeki yaşam alanlarını yaratıyoruz. Villa, müstakil ev, apartman ve daire projelerinde uzman ekibimizle hizmetinizdeyiz.</p>
+                              </div>
+                           </div>
+                        </div>
                         <div class="row">
                            <div class="col-md-4 col-sm-6 padding_0 margin_right20">
                               <div class="services">
                                  <div class="services_img">
-                                    <figure><img src="images/service_img1.png" alt="#" />  </figure>
+                                    <figure><img src="images/service_img1.png" alt="Villa Tasarımı" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Villa Tasarımı</span>
                                     </div>
+                                 </div>
+                                 <div class="service-description mt-3 p-3">
+                                    <p>Lüks ve konforlu villalar için özel mimari tasarım hizmetleri. Doğa ile iç içe, modern ve fonksiyonel yaşam alanları.</p>
                                  </div>
                               </div>
                            </div>
                            <div class="col-md-4 col-sm-6 padding_0 margin_top70p margin_right20 margin_left20">
                               <div class="services">
                                  <div class="services_img">
-                                    <figure><img src="images/service_img2.png" alt="#" />  </figure>
+                                    <figure><img src="images/service_img2.png" alt="Apartman Tasarımı" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Apartman Tasarımı</span>
                                     </div>
+                                 </div>
+                                 <div class="service-description mt-3 p-3">
+                                    <p>Çok katlı konut projeleri için estetik ve işlevsel çözümler. Sosyal alanlardan, otopark çözümlerine kapsamlı tasarım.</p>
                                  </div>
                               </div>
                            </div>
                            <div class="col-md-4 col-sm-6 padding_0 margin_left20">
                               <div class="services">
                                  <div class="services_img">
-                                    <figure><img src="images/service_img3.png" alt="#" />  </figure>
+                                    <figure><img src="images/service_img3.png" alt="İç Mekan Tasarımı" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>İç Mekan Tasarımı</span>
+                                    </div>
+                                 </div>
+                                 <div class="service-description mt-3 p-3">
+                                    <p>Yaşam alanlarınızı kişiselleştiren iç mekan tasarımları. Fonksiyonel ve estetik mekanlar için profesyonel çözümler.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row mt-5">
+                           <div class="col-md-8 offset-md-2">
+                              <div class="service-features p-4 bg-white rounded shadow-sm">
+                                 <h4 class="mb-3">Konut Projelerimizde Öne Çıkan Özellikler</h4>
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <ul class="feature-list">
+                                          <li><i class="fas fa-home"></i> Modern ve Özgün Tasarımlar</li>
+                                          <li><i class="fas fa-wind"></i> Doğal Havalandırma Sistemleri</li>
+                                          <li><i class="fas fa-leaf"></i> Sürdürülebilir Mimari Yaklaşım</li>
+                                       </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <ul class="feature-list">
+                                          <li><i class="fas fa-lightbulb"></i> Enerji Verimli Çözümler</li>
+                                          <li><i class="fas fa-shield-alt"></i> Güvenlik Odaklı Tasarım</li>
+                                          <li><i class="fas fa-universal-access"></i> Erişilebilir Mekanlar</li>
+                                       </ul>
                                     </div>
                                  </div>
                               </div>
                            </div>
-                           <div class="col-md-4 offset-md-8 col-sm-6 padding_0 margin_top170">
-                              <div class="services margin_left60">
-                                 <div class="services_img">
-                                    <figure><img src="images/service_img4.png" alt="#" />  </figure>
-                                    <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-sm-6 margin_top40">
-                              <a class="read_more " href="Javascript:void(0)">Read More</a>
+                        </div>
+                        <div class="row mt-4">
+                           <div class="col-sm-6 margin_top40 text-center">
+                              <a class="read_more" href="projects.html">Projelerimizi İnceleyin</a>
                            </div>
                         </div>
                      </div>
+                     
+                     <!-- TİCARİ PROJELER -->
                      <div class="tab-pane fade" id="profile-md" role="tabpanel" aria-labelledby="profile-tab-md">
+                        <div class="row mb-5">
+                           <div class="col-md-8 offset-md-2">
+                              <div class="service-intro text-center mb-5">
+                                 <h3>İşinizi Büyütecek Mekanlar Tasarlıyoruz</h3>
+                                 <p>Markanızı en iyi şekilde yansıtan, fonksiyonel ve etkileyici ticari alanlar tasarlıyoruz. Ofis, mağaza, restoran ve otel projelerinde müşteri deneyimini önemseyen yaklaşımımızla fark yaratıyoruz.</p>
+                              </div>
+                           </div>
+                        </div>
                         <div class="row">
                            <div class="col-md-4 col-sm-6 padding_0 margin_right20">
                               <div class="services">
                                  <div class="services_img">
-                                    <figure><img src="images/service_img3.png" alt="#" />  </figure>
+                                    <figure><img src="images/service_img3.png" alt="Ofis Tasarımı" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Ofis Tasarımı</span>
                                     </div>
+                                 </div>
+                                 <div class="service-description mt-3 p-3">
+                                    <p>Verimli çalışma ortamları için ergonomik ve modern ofis tasarımları. Kurumsal kimliğinizi yansıtan özel çözümler.</p>
                                  </div>
                               </div>
                            </div>
                            <div class="col-md-4 col-sm-6 padding_0 margin_top70p margin_right20 margin_left20">
                               <div class="services">
                                  <div class="services_img">
-                                    <figure><img src="images/service_img2.png" alt="#" />  </figure>
+                                    <figure><img src="images/service_img2.png" alt="Mağaza Tasarımı" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Mağaza Tasarımı</span>
                                     </div>
+                                 </div>
+                                 <div class="service-description mt-3 p-3">
+                                    <p>Müşterileri etkileyen ve satışları artıran mağaza konseptleri. Markanızı öne çıkaran yaratıcı perakende çözümleri.</p>
                                  </div>
                               </div>
                            </div>
                            <div class="col-md-4 col-sm-6 padding_0 margin_left20">
                               <div class="services">
                                  <div class="services_img">
-                                    <figure><img src="images/service_img4.png" alt="#" />  </figure>
+                                    <figure><img src="images/service_img4.png" alt="Restoran ve Kafe Tasarımı" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Restoran ve Kafe Tasarımı</span>
+                                    </div>
+                                 </div>
+                                 <div class="service-description mt-3 p-3">
+                                    <p>Misafirlerinize unutulmaz deneyimler sunan yeme-içme mekanları. Konseptinize uygun, fonksiyonel ve etkileyici tasarımlar.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row mt-5">
+                           <div class="col-md-8 offset-md-2">
+                              <div class="service-features p-4 bg-white rounded shadow-sm">
+                                 <h4 class="mb-3">Ticari Projelerimizde Öne Çıkan Özellikler</h4>
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <ul class="feature-list">
+                                          <li><i class="fas fa-chart-line"></i> Marka Değerini Artıran Tasarımlar</li>
+                                          <li><i class="fas fa-users"></i> Müşteri Deneyimi Odaklı Yaklaşım</li>
+                                          <li><i class="fas fa-palette"></i> Kurumsal Kimliğe Uygun Konseptler</li>
+                                       </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <ul class="feature-list">
+                                          <li><i class="fas fa-tachometer-alt"></i> Operasyonel Verimliliği Artıran Çözümler</li>
+                                          <li><i class="fas fa-cogs"></i> Esnek ve Modüler Tasarımlar</li>
+                                          <li><i class="fas fa-hand-holding-usd"></i> Maliyet Etkin Uygulamalar</li>
+                                       </ul>
                                     </div>
                                  </div>
                               </div>
                            </div>
-                           <div class="col-md-4 offset-md-8 col-sm-6 padding_0 margin_top170">
-                              <div class="services margin_left60">
-                                 <div class="services_img">
-                                    <figure><img src="images/service_img1.png" alt="#" />  </figure>
-                                    <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-sm-6 margin_top40">
-                              <a class="read_more " href="Javascript:void(0)">Read More</a>
+                        </div>
+                        <div class="row mt-4">
+                           <div class="col-sm-6 margin_top40 text-center">
+                              <a class="read_more" href="projects.html">Projelerimizi İnceleyin</a>
                            </div>
                         </div>
                      </div>
+                     
+                     <!-- PEYZAJ TASARIMI -->
                      <div class="tab-pane fade" id="contact-md" role="tabpanel" aria-labelledby="contact-tab-md">
+                        <div class="row mb-5">
+                           <div class="col-md-8 offset-md-2">
+                              <div class="service-intro text-center mb-5">
+                                 <h3>Doğa ile Harmoni İçinde Yaşam Alanları</h3>
+                                 <p>Dış mekanlarınızı yaşam alanlarınızın değerli bir uzantısı haline getiriyoruz. Sürdürülebilir peyzaj tasarımları ile doğa dostu, estetik ve fonksiyonel dış mekanlar yaratıyoruz.</p>
+                              </div>
+                           </div>
+                        </div>
                         <div class="row">
                            <div class="col-md-4 col-sm-6 padding_0 margin_right20">
                               <div class="services">
                                  <div class="services_img">
-                                    <figure><img src="images/service_img4.png" alt="#" />  </figure>
+                                    <figure><img src="images/service_img4.png" alt="Bahçe Tasarımı" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Bahçe Tasarımı</span>
                                     </div>
+                                 </div>
+                                 <div class="service-description mt-3 p-3">
+                                    <p>Mevsimsel değişimlere uygun, sürdürülebilir bahçe tasarımları. Özel bitkiler ve peyzaj elemanları ile estetik dış mekanlar.</p>
                                  </div>
                               </div>
                            </div>
                            <div class="col-md-4 col-sm-6 padding_0 margin_top70p margin_right20 margin_left20">
                               <div class="services">
                                  <div class="services_img">
-                                    <figure><img src="images/service_img2.png" alt="#" />  </figure>
+                                    <figure><img src="images/service_img2.png" alt="Teras ve Balkon Tasarımı" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Teras ve Balkon Tasarımı</span>
                                     </div>
+                                 </div>
+                                 <div class="service-description mt-3 p-3">
+                                    <p>Sınırlı alanlarda maksimum yaşam konforu sunan teras ve balkon çözümleri. Şehir manzarasının keyfini çıkarabileceğiniz özel alanlar.</p>
                                  </div>
                               </div>
                            </div>
                            <div class="col-md-4 col-sm-6 padding_0 margin_left20">
                               <div class="services">
                                  <div class="services_img">
-                                    <figure><img src="images/service_img1.png" alt="#" />  </figure>
+                                    <figure><img src="images/service_img1.png" alt="Havuz ve Su Öğeleri" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Havuz ve Su Öğeleri</span>
+                                    </div>
+                                 </div>
+                                 <div class="service-description mt-3 p-3">
+                                    <p>Dış mekanlarınıza değer katan, estetik ve işlevsel havuz tasarımları. Dinlendirici su öğeleri ile huzurlu ortamlar yaratma.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row mt-5">
+                           <div class="col-md-8 offset-md-2">
+                              <div class="service-features p-4 bg-white rounded shadow-sm">
+                                 <h4 class="mb-3">Peyzaj Projelerimizde Öne Çıkan Özellikler</h4>
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <ul class="feature-list">
+                                          <li><i class="fas fa-seedling"></i> Yerel Bitki Türleri ile Sürdürülebilir Tasarım</li>
+                                          <li><i class="fas fa-tint"></i> Akıllı Sulama Sistemleri</li>
+                                          <li><i class="fas fa-sun"></i> Mevsimsel Değişimlere Uyumlu Peyzaj</li>
+                                       </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <ul class="feature-list">
+                                          <li><i class="fas fa-recycle"></i> Ekolojik Dengeyi Koruyan Yaklaşım</li>
+                                          <li><i class="fas fa-moon"></i> Özel Aydınlatma Çözümleri</li>
+                                          <li><i class="fas fa-utensils"></i> Dış Mekan Yaşam ve Yemek Alanları</li>
+                                       </ul>
                                     </div>
                                  </div>
                               </div>
                            </div>
-                           <div class="col-md-4 offset-md-8 col-sm-6 padding_0 margin_top170">
-                              <div class="services margin_left60">
-                                 <div class="services_img">
-                                    <figure><img src="images/service_img3.png" alt="#" />  </figure>
-                                    <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-sm-6 margin_top40">
-                              <a class="read_more " href="Javascript:void(0)">Read More</a>
+                        </div>
+                        <div class="row mt-4">
+                           <div class="col-sm-6 margin_top40 text-center">
+                              <a class="read_more" href="projects.html">Projelerimizi İnceleyin</a>
                            </div>
                         </div>
                      </div>
@@ -239,52 +403,119 @@
             </div>
          </div>
       </div>
-      <!-- end services -->
+      <!-- end services tabs -->
+      
+      <!-- service process -->
+      <div class="process-section section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center mb-5">
+                  <h2 class="section-title">Çalışma Sürecimiz</h2>
+                  <p class="section-subtitle">Projelerinizi hayata geçirirken izlediğimiz yol</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="process-step text-center">
+                     <div class="process-icon">
+                        <i class="fas fa-comments"></i>
+                        <span class="step-number">01</span>
+                     </div>
+                     <h4>Keşif ve Analiz</h4>
+                     <p>İhtiyaçlarınızı ve beklentilerinizi anlamak için detaylı görüşmeler yapıyoruz.</p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="process-step text-center">
+                     <div class="process-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <span class="step-number">02</span>
+                     </div>
+                     <h4>Konsept Tasarım</h4>
+                     <p>Beklentileriniz doğrultusunda özgün ve yaratıcı konsept tasarımlar geliştiriyoruz.</p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="process-step text-center">
+                     <div class="process-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                        <span class="step-number">03</span>
+                     </div>
+                     <h4>Uygulama Projesi</h4>
+                     <p>Onaylanan konsept doğrultusunda detaylı uygulama projeleri hazırlıyoruz.</p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="process-step text-center">
+                     <div class="process-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                        <span class="step-number">04</span>
+                     </div>
+                     <h4>Uygulama ve Teslim</h4>
+                     <p>Projenin başından sonuna kadar süreçleri takip ederek kaliteli bir uygulama sunuyoruz.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end service process -->
+      
+      <!-- cta section -->
+      <div class="cta-section section-padding bg-light">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 offset-md-2 text-center">
+                  <h2>Projeleriniz İçin Profesyonel Destek Alın</h2>
+                  <p>Mimari ihtiyaçlarınız için uzman ekibimizle hizmetinizdeyiz. Hayalinizdeki projeyi gerçeğe dönüştürmek için hemen iletişime geçin.</p>
+                  <a href="contact.html" class="read_more mt-4">İletişime Geçin</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end cta section -->
+
       <!-- footer -->
       <footer>
          <div class="footer">
             <div class="container">
                <div class="row">
-                  <div class="col-md-10 offset-md-1">
-                     <ul class="social_icon text_align_center">
-                        <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
                   <div class="col-md-4 col-sm-6">
                      <div class="reader">
-                        <a href="index.html"><img src="images/logo_footer.png" alt="#"/></a>
-                        <p class="padd_flet40">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                        <a href="index.html"><img src="logo.png" alt="Arceer Mimarlık Logo"/></a>
+                        <p class="padd_flet40">Arceer Mimarlık olarak, her projeye özgün bir yaklaşımla, yaşam alanlarınızı en verimli şekilde tasarlıyoruz. Sürdürülebilir ve çevre dostu çözümlerle, hayalinizdeki mekanları gerçeğe dönüştürüyoruz.</p>
                      </div>
                   </div>
                   <div class="col-md-2 col-sm-6">
                      <div class="reader">
-                        <h3>Explore</h3>
+                        <h3>Keşfet</h3>
                         <ul class="xple_menu">
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="services.html">Services</a></li>
-                           <li><a href="contact.html">Contact Us</a></li>
+                           <li><a href="index.html">Ana Sayfa</a></li>
+                           <li><a href="about.html">Hakkımızda</a></li>
+                           <li><a href="services.html">Hizmetlerimiz</a></li>
+                           <li><a href="projects.html">Projeler</a></li>
+                           <li><a href="blog.html">Blog</a></li>
+                           <li><a href="references.html">Referanslar</a></li>
+                           <li><a href="contact.html">İletişim</a></li>
                         </ul>
                      </div>
                   </div>
                   <div class="col-md-3 col-sm-6">
                      <div class="reader">
-                        <h3>Recent Posts</h3>
+                        <h3>Son Projeler</h3>
                         <ul class="re_post">
-                           <li><img src="images/re_img1.jpg" alt="#"/></li>
-                           <li><img src="images/re_img2.jpg" alt="#"/></li>
-                           <li><img src="images/re_img3.jpg" alt="#"/></li>
-                           <li><img src="images/re_img4.jpg" alt="#"/></li>
+                           <li><img src="images/re_img1.jpg" alt="Proje Görseli"/></li>
+                           <li><img src="images/re_img2.jpg" alt="Proje Görseli"/></li>
+                           <li><img src="images/re_img3.jpg" alt="Proje Görseli"/></li>
+                           <li><img src="images/re_img4.jpg" alt="Proje Görseli"/></li>
                         </ul>
                      </div>
                   </div>
                   <div class="col-md-3 col-sm-6">
                      <div class="reader">
-                        <h3>Contact Us</h3>
-                        <p>It is a lon <br> g established fact that a reader will be distracted by the readable content of a page when looking at its </p>
+                        <h3>İletişim</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Bağdat Caddesi No:123, Kadıköy, İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 555 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@arceer.com</p>
                      </div>
                   </div>
                </div>
@@ -292,8 +523,16 @@
             <div class="copyright text_align_center">
                <div class="container">
                   <div class="row">
-                     <div class="col-md-10 offset-md-1">
-                        <p>Copyright 2020 All Right Reserved By <a href="https://html.design/"> Free Html Template</a></p>
+                     <div class="col-md-8 offset-md-1">
+                        <p>Copyright 2024 Tüm Hakları Saklıdır - Arceer Mimarlık</p>
+                     </div>
+                     <div class="col-md-3">
+                        <ul class="social_icon_footer">
+                           <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
                      </div>
                   </div>
                </div>
@@ -306,5 +545,11 @@
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/custom.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- Animasyon ve Carousel -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      <script>
+          // WOW.js başlatma
+          new WOW().init();
+      </script>
    </body>
 </html>

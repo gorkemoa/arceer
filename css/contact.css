@@ -1,0 +1,379 @@
+/* İletişim Sayfası için Özel CSS */
+
+/* İletişim Bilgi Kutuları */
+.contact-info-section {
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.contact-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background-color: rgba(0, 121, 107, 0.1);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    color: var(--tertiary-color);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.contact-box:hover .contact-icon {
+    background-color: var(--tertiary-color);
+    color: #fff;
+}
+
+.contact-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.contact-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.contact-content p a {
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-content p a:hover {
+    color: var(--tertiary-color);
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    color: #555;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--tertiary-color);
+    color: #fff;
+}
+
+/* İletişim Formu */
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-form-wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form .form-group {
+    margin-bottom: 25px;
+}
+
+.contact-form label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.contact-form .form-control {
+    height: auto;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #00796b;
+    box-shadow: 0 0 0 0.2rem rgba(0, 121, 107, 0.25);
+}
+
+.contact-form textarea.form-control {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form .form-check-input {
+    margin-top: 0.3rem;
+}
+
+.contact-form .form-check-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-form .form-check-label a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.contact-form .form-check-label a:hover {
+    text-decoration: underline;
+}
+
+.submit_btn {
+    background-color: var(--tertiary-color);
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.submit_btn:hover {
+    background-color: var(--tertiary-color);
+}
+
+/* Harita */
+.contact-map-wrapper {
+    height: 100%;
+    position: relative;
+}
+
+#contact-map {
+    height: 450px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+/* Yönlendirmeler Bölümü */
+.directions-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.office-directions {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.office-directions h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.direction-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.direction-item:last-child {
+    margin-bottom: 0;
+}
+
+.direction-item i {
+    font-size: 30px;
+    color: var(--tertiary-color);
+    margin-right: 15px;
+    line-height: 1;
+}
+
+.direction-item h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.direction-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* SSS Bölümü */
+.faq-section {
+    padding: 80px 0;
+}
+
+.accordion .card {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.accordion .card-header {
+    padding: 0;
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.accordion .card-header h2 {
+    margin: 0;
+}
+
+.accordion .btn-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.accordion .btn-link:hover {
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.accordion .btn-link:focus {
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.accordion .btn-link.collapsed {
+    background-color: #fff;
+}
+
+.accordion .btn-link:not(.collapsed) {
+    color: var(--tertiary-color);
+    background-color: #f9f9f9;
+}
+
+.accordion .btn-link::after {
+    content: "\f107";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.accordion .btn-link:not(.collapsed)::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion .card-body {
+    padding: 5px 20px 20px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact-box {
+        margin-bottom: 20px;
+    }
+    
+    .contact-section {
+        padding: 60px 0;
+    }
+    
+    .directions-section {
+        padding: 60px 0;
+    }
+    
+    .office-directions {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+    }
+    
+    .contact-content h3 {
+        font-size: 17px;
+    }
+    
+    .office-directions {
+        padding: 20px;
+    }
+    
+    .direction-item i {
+        font-size: 25px;
+    }
+    
+    .direction-item h4 {
+        font-size: 16px;
+    }
+    
+    #contact-map {
+        height: 350px;
+    }
+    
+    .accordion .btn-link {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-form-wrapper {
+        padding: 20px;
+    }
+    
+    .direction-item {
+        flex-direction: column;
+    }
+    
+    .direction-item i {
+        margin-bottom: 10px;
+    }
+    
+    .submit_btn {
+        width: 100%;
+    }
+} 

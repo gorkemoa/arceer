@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="tr">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Blog - Arceer Mimarlık</title>
+      <meta name="keywords" content="mimarlık blog, arceer mimarlık, mimarlık makaleleri, tasarım blog, mimari trend, sürdürülebilir mimarlık, iç mimari">
+      <meta name="description" content="Arceer Mimarlık Blog sayfasında mimari tasarım, sürdürülebilirlik, iç mimari ve yapı sektöründeki son trendler hakkında bilgiler bulabilirsiniz.">
+      <meta name="author" content="Arceer Mimarlık">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- blog css -->
+      <link rel="stylesheet" href="css/blog.css">
+      <!-- responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- awesome fontfamily -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Animate CSS -->
+      <link rel="stylesheet" href="css/animate.css">
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="" /></div>
+      </div>
+      <!-- end loader -->
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="index.html">Anasayfa</a>
+         <a href="about.html">Kurumsal</a>
+         <a href="services.html">Hizmetlerimiz</a>
+         <a href="projects.html">Projeler</a>
+         <a href="blog.html">Blog</a>
+         <a href="references.html">Referanslar</a>
+         <a href="contact.html">İletişim</a>
+      </div>
+      <!-- header -->
+      <header class="site-header">
+         <nav class="navbar">
+            <div class="container">
+               <div class="navbar-brand">
+                  <a href="index.html">
+                     <img src="logo.png" alt="Arceer Mimarlık Logo" class="logo-img">
+                  </a>
+               </div>
+               
+               <ul class="main-menu d-none d-lg-flex">
+                  <li><a href="index.html">Anasayfa</a></li>
+                  <li><a href="about.html">Kurumsal</a></li>
+                  <li><a href="services.html">Hizmetlerimiz</a></li>
+                  <li><a href="projects.html">Projeler</a></li>
+                  <li><a href="blog.html" class="active">Blog</a></li>
+                  <li><a href="references.html">Referanslar</a></li>
+                  <li><a href="contact.html">İletişim</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <!-- end header -->
+    
+      <!-- Mobil Menü -->
+      <div id="mobileNav" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="index.html">Ana Sayfa</a>
+         <a href="about.html">Kurumsal</a>
+         <a href="services.html">Hizmetlerimiz</a>
+         <a href="projects.html">Projeler</a>
+         <a href="blog.html">Blog</a>
+         <a href="references.html">Referanslar</a>
+         <a href="contact.html">İletişim</a>
+      </div>
+    
+      <!-- page banner -->
+      <div class="page-banner">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="page-title">BLOG</h1>
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                     </ol>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end page banner -->
+    
+      <!-- blog intro section -->
+      <div class="about-section section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 offset-md-2 text-center">
+                  <div class="about-content">
+                     <h2 class="section-title">Mimari Perspektifler</h2>
+                     <p class="lead">Mimarlık, tasarım ve yapı sektöründeki son gelişmeler, fikirler ve trendler.</p>
+                     <p>Arceer Mimarlık Blog sayfasında, mimaride sürdürülebilirlik, yenilikçi tasarım yaklaşımları, iç mimari uygulamaları ve sektördeki son trendler hakkında bilgi ve görüşleri bulabilirsiniz. Uzman ekibimizin kaleminden çıkan yazılar ve makaleler ile mimarlık dünyasına dair bilgilerinizi güncel tutabilirsiniz.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end blog intro section -->
+    
+      <!-- featured post section -->
+      <div class="featured-post-section section-padding bg-light">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="featured-post">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="featured-image">
+                              <img src="images/blog1.jpg" alt="Sürdürülebilir Mimarlık" class="img-fluid rounded">
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="featured-content">
+                              <span class="post-category">Sürdürülebilirlik</span>
+                              <h2 class="post-title">Modern Mimarlıkta Sürdürülebilir Tasarım İlkeleri</h2>
+                              <div class="post-meta">
+                                 <span class="post-date"><i class="far fa-calendar-alt"></i> 15 Mayıs 2024</span>
+                                 <span class="post-author"><i class="far fa-user"></i> Ahmet Yılmaz</span>
+                                 <span class="post-comments"><i class="far fa-comment"></i> 8 Yorum</span>
+                              </div>
+                              <p class="post-excerpt">Günümüzde sürdürülebilir mimarlık, sadece bir trend değil, aynı zamanda gelecek nesillere yaşanabilir bir dünya bırakmak için bir zorunluluk haline geldi. Bu yazımızda, sürdürülebilir mimarinin temel ilkelerini, enerji verimliliğini artıran tasarım stratejilerini ve çevre dostu malzemelerin kullanımını ele alıyoruz.</p>
+                              <a href="#" class="read-more-btn">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end featured post section -->
+    
+      <!-- blog posts grid -->
+      <div class="blog-posts-section section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center mb-5">
+                  <h2 class="section-title">Son Yazılarımız</h2>
+                  <p class="section-subtitle">Mimarlık ve tasarım dünyasından en güncel yazılar</p>
+               </div>
+            </div>
+            
+            <div class="row">
+               <!-- Blog Kategori Filtreleri -->
+               <div class="col-md-12">
+                  <div class="blog-filters text-center mb-5">
+                     <button class="filter-btn active" data-filter="all">Tümü</button>
+                     <button class="filter-btn" data-filter="design">Tasarım</button>
+                     <button class="filter-btn" data-filter="sustainability">Sürdürülebilirlik</button>
+                     <button class="filter-btn" data-filter="interior">İç Mimari</button>
+                     <button class="filter-btn" data-filter="trends">Trendler</button>
+                     <button class="filter-btn" data-filter="projects">Projeler</button>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="row">
+               <!-- Blog Post 1 -->
+               <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="blog-post-card">
+                     <div class="post-image">
+                        <img src="images/blog2.jpg" alt="Mimari Trend" class="img-fluid">
+                        <div class="post-date">
+                           <span class="day">10</span>
+                           <span class="month">Mayıs</span>
+                        </div>
+                     </div>
+                     <div class="post-content">
+                        <div class="post-category">
+                           <span class="category-tag trends">Trendler</span>
+                        </div>
+                        <h3 class="post-title"><a href="#">2024'ün Öne Çıkan Mimari Tasarım Trendleri</a></h3>
+                        <p class="post-excerpt">Bu yıl mimari tasarımda hangi trendler öne çıkıyor? Minimalizm, doğal malzemelerin kullanımı ve teknolojinin mimariyle bütünleşmesi gibi ana akımları inceliyoruz.</p>
+                        <div class="post-meta">
+                           <span class="post-author"><i class="far fa-user"></i> Mehmet Kaya</span>
+                           <span class="post-comments"><i class="far fa-comment"></i> 5 Yorum</span>
+                        </div>
+                        <a href="#" class="read-more">Devamını Oku</a>
+                     </div>
+                  </div>
+               </div>
+               
+               <!-- Blog Post 2 -->
+               <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="blog-post-card">
+                     <div class="post-image">
+                        <img src="images/blog3.jpg" alt="İç Mimari" class="img-fluid">
+                        <div class="post-date">
+                           <span class="day">28</span>
+                           <span class="month">Nisan</span>
+                        </div>
+                     </div>
+                     <div class="post-content">
+                        <div class="post-category">
+                           <span class="category-tag interior">İç Mimari</span>
+                        </div>
+                        <h3 class="post-title"><a href="#">Küçük Alanları Maksimize Etmenin 7 Yolu</a></h3>
+                        <p class="post-excerpt">Küçük evlerde ve dairelerde yaşam alanını en verimli şekilde kullanmak için uzmanlarımızdan pratik ipuçları ve akıllı tasarım çözümleri.</p>
+                        <div class="post-meta">
+                           <span class="post-author"><i class="far fa-user"></i> Ayşe Demir</span>
+                           <span class="post-comments"><i class="far fa-comment"></i> 12 Yorum</span>
+                        </div>
+                        <a href="#" class="read-more">Devamını Oku</a>
+                     </div>
+                  </div>
+               </div>
+               
+               <!-- Blog Post 3 -->
+               <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="blog-post-card">
+                     <div class="post-image">
+                        <img src="images/blog4.jpg" alt="Ofis Tasarımı" class="img-fluid">
+                        <div class="post-date">
+                           <span class="day">15</span>
+                           <span class="month">Nisan</span>
+                        </div>
+                     </div>
+                     <div class="post-content">
+                        <div class="post-category">
+                           <span class="category-tag design">Tasarım</span>
+                        </div>
+                        <h3 class="post-title"><a href="#">Modern Ofis Tasarımında Verimlilik ve Estetik</a></h3>
+                        <p class="post-excerpt">Pandemi sonrası değişen çalışma kültürüyle birlikte, ofis tasarımlarının nasıl evrildiğini ve çalışan verimliliğini artıran tasarım öğelerini inceliyoruz.</p>
+                        <div class="post-meta">
+                           <span class="post-author"><i class="far fa-user"></i> Deniz Yılmaz</span>
+                           <span class="post-comments"><i class="far fa-comment"></i> 3 Yorum</span>
+                        </div>
+                        <a href="#" class="read-more">Devamını Oku</a>
+                     </div>
+                  </div>
+               </div>
+               
+               <!-- Blog Post 4 -->
+               <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="blog-post-card">
+                     <div class="post-image">
+                        <img src="images/blog5.jpg" alt="Yeşil Mimari" class="img-fluid">
+                        <div class="post-date">
+                           <span class="day">5</span>
+                           <span class="month">Nisan</span>
+                        </div>
+                     </div>
+                     <div class="post-content">
+                        <div class="post-category">
+                           <span class="category-tag sustainability">Sürdürülebilirlik</span>
+                        </div>
+                        <h3 class="post-title"><a href="#">Yeşil Çatıların Ekolojik ve Ekonomik Faydaları</a></h3>
+                        <p class="post-excerpt">Yeşil çatıların enerji tasarrufu, su yönetimi ve kentsel ısı adası etkisini azaltma gibi faydalarını ve Türkiye'deki başarılı uygulama örneklerini ele alıyoruz.</p>
+                        <div class="post-meta">
+                           <span class="post-author"><i class="far fa-user"></i> Can Özkan</span>
+                           <span class="post-comments"><i class="far fa-comment"></i> 7 Yorum</span>
+                        </div>
+                        <a href="#" class="read-more">Devamını Oku</a>
+                     </div>
+                  </div>
+               </div>
+               
+               <!-- Blog Post 5 -->
+               <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="blog-post-card">
+                     <div class="post-image">
+                        <img src="images/blog6.jpg" alt="Proje Analizi" class="img-fluid">
+                        <div class="post-date">
+                           <span class="day">25</span>
+                           <span class="month">Mart</span>
+                        </div>
+                     </div>
+                     <div class="post-content">
+                        <div class="post-category">
+                           <span class="category-tag projects">Projeler</span>
+                        </div>
+                        <h3 class="post-title"><a href="#">İzmir Marina Konutları Projesi Analizi</a></h3>
+                        <p class="post-excerpt">Tamamladığımız İzmir Marina Konutları projesinin tasarım sürecini, karşılaştığımız zorlukları ve mimari çözümleri detaylı olarak inceliyoruz.</p>
+                        <div class="post-meta">
+                           <span class="post-author"><i class="far fa-user"></i> Ali Kara</span>
+                           <span class="post-comments"><i class="far fa-comment"></i> 9 Yorum</span>
+                        </div>
+                        <a href="#" class="read-more">Devamını Oku</a>
+                     </div>
+                  </div>
+               </div>
+               
+               <!-- Blog Post 6 -->
+               <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="blog-post-card">
+                     <div class="post-image">
+                        <img src="images/blog7.jpg" alt="Akıllı Ev Teknolojileri" class="img-fluid">
+                        <div class="post-date">
+                           <span class="day">12</span>
+                           <span class="month">Mart</span>
+                        </div>
+                     </div>
+                     <div class="post-content">
+                        <div class="post-category">
+                           <span class="category-tag trends">Trendler</span>
+                        </div>
+                        <h3 class="post-title"><a href="#">Akıllı Ev Teknolojilerinin Mimariye Etkisi</a></h3>
+                        <p class="post-excerpt">Akıllı ev sistemlerinin mimari tasarıma nasıl entegre edildiğini ve gelecekte bu teknolojilerin yaşam alanlarımızı nasıl şekillendireceğini tartışıyoruz.</p>
+                        <div class="post-meta">
+                           <span class="post-author"><i class="far fa-user"></i> Selin Tekin</span>
+                           <span class="post-comments"><i class="far fa-comment"></i> 4 Yorum</span>
+                        </div>
+                        <a href="#" class="read-more">Devamını Oku</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="row">
+               <div class="col-md-12">
+                  <nav aria-label="Page navigation">
+                     <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                           <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-chevron-left"></i></a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                           <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end blog posts grid -->
+    
+      <!-- video content section -->
+      <div class="video-content-section section-padding bg-light">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center mb-5">
+                  <h2 class="section-title">Video İçeriklerimiz</h2>
+                  <p class="section-subtitle">Proje süreçlerimiz ve mimari bakış açımızı anlatan videolar</p>
+               </div>
+            </div>
+            
+            <div class="row">
+               <div class="col-lg-8 offset-lg-2">
+                  <div class="video-wrapper">
+                     <div class="video-thumbnail">
+                        <img src="images/video-thumb.jpg" alt="Video Thumbnail" class="img-fluid rounded">
+                        <div class="play-button">
+                           <i class="fas fa-play"></i>
+                        </div>
+                     </div>
+                     <div class="video-content text-center mt-4">
+                        <h3>Sürdürülebilir Mimari: Geleceğin Yapıları</h3>
+                        <p>Arceer Mimarlık olarak sürdürülebilir mimari yaklaşımımızı ve bu alandaki yenilikçi projelerimizi anlattığımız video.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end video content section -->
+    
+      <!-- newsletter section -->
+      <div class="newsletter-section section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 offset-lg-3 text-center">
+                  <div class="newsletter-content wow fadeInUp">
+                     <i class="fas fa-envelope-open-text newsletter-icon"></i>
+                     <h3 class="newsletter-title">Bültenimize Abone Olun</h3>
+                     <p>Mimarlık dünyasından haberler, yeni projelerimiz ve blog yazılarımızdan haberdar olmak için bültenimize abone olun.</p>
+                     <form class="newsletter-form">
+                        <div class="input-group">
+                           <input type="email" class="form-control" placeholder="E-posta adresiniz" required>
+                           <div class="input-group-append">
+                              <button class="btn btn-primary" type="submit">Abone Ol</button>
+                           </div>
+                        </div>
+                     </form>
+                     <p class="form-info">* KVKK kapsamında bilgileriniz korunmaktadır.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end newsletter section -->
+    
+      <!-- footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4 col-sm-6">
+                     <div class="reader">
+                        <a href="index.html"><img src="logo.png" alt="Arceer Mimarlık Logo"/></a>
+                        <p class="padd_flet40">Arceer Mimarlık olarak, her projeye özgün bir yaklaşımla, yaşam alanlarınızı en verimli şekilde tasarlıyoruz. Sürdürülebilir ve çevre dostu çözümlerle, hayalinizdeki mekanları gerçeğe dönüştürüyoruz.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-2 col-sm-6">
+                     <div class="reader">
+                        <h3>Keşfet</h3>
+                        <ul class="xple_menu">
+                           <li><a href="index.html">Ana Sayfa</a></li>
+                           <li><a href="about.html">Hakkımızda</a></li>
+                           <li><a href="services.html">Hizmetlerimiz</a></li>
+                           <li><a href="projects.html">Projeler</a></li>
+                           <li><a href="blog.html">Blog</a></li>
+                           <li><a href="references.html">Referanslar</a></li>
+                           <li><a href="contact.html">İletişim</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="reader">
+                        <h3>Son Projeler</h3>
+                        <ul class="re_post">
+                           <li><img src="images/re_img1.jpg" alt="Proje Görseli"/></li>
+                           <li><img src="images/re_img2.jpg" alt="Proje Görseli"/></li>
+                           <li><img src="images/re_img3.jpg" alt="Proje Görseli"/></li>
+                           <li><img src="images/re_img4.jpg" alt="Proje Görseli"/></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="reader">
+                        <h3>İletişim</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Bağdat Caddesi No:123, Kadıköy, İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 555 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@arceer.com</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright text_align_center">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 offset-md-1">
+                        <p>Copyright 2024 Tüm Hakları Saklıdır - Arceer Mimarlık</p>
+                     </div>
+                     <div class="col-md-3">
+                        <ul class="social_icon_footer">
+                           <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <!-- Animasyon -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      <script>
+          // WOW.js başlatma
+          new WOW().init();
+          
+          // Blog filtreleme
+          $(document).ready(function() {
+              $('.filter-btn').on('click', function() {
+                  var filterValue = $(this).attr('data-filter');
+                  
+                  // Aktif buton sınıfını değiştir
+                  $('.filter-btn').removeClass('active');
+                  $(this).addClass('active');
+                  
+                  // Filtreleme işlemi (Basit bir gösterim için)
+                  if(filterValue === 'all') {
+                      $('.blog-post-card').parent().show();
+                  } else {
+                      $('.blog-post-card').parent().hide();
+                      $('.category-tag.' + filterValue).closest('.blog-post-card').parent().show();
+                  }
+              });
+              
+              // Video oynat düğmesi tıklama işlemi
+              $('.play-button').on('click', function() {
+                  alert('Video oynatıcı açılacak');
+              });
+              
+              // Newsletter form gönderimi
+              $('.newsletter-form').on('submit', function(e) {
+                  e.preventDefault();
+                  alert('Bültene abone olduğunuz için teşekkürler!');
+                  $(this).find('input').val('');
+              });
+          });
+      </script>
+   </body>
+</html> 

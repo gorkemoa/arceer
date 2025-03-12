@@ -8,26 +8,29 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>İletişim - Basco</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
+      <title>İletişim - Arceer Mimarlık</title>
+      <meta name="keywords" content="mimarlık iletişim, arceer mimarlık, mimarlık ofisi, iletişim bilgileri, mimari danışmanlık, izmir mimarlık">
+      <meta name="description" content="Arceer Mimarlık ile iletişime geçin. Mimari projeleriniz için teklif almak veya bilgi edinmek için bize ulaşın. İzmir ve İstanbul ofislerimizle hizmetinizdeyiz.">
+      <meta name="author" content="Arceer Mimarlık">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
+      
       <!-- style css -->
       <link rel="stylesheet" href="css/style.css">
+      <!-- contact css -->
+      <link rel="stylesheet" href="css/contact.css">
       <!-- responsive-->
       <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- awesome fontfamily -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <!-- Leaflet Map CSS -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
    </head>
    <!-- body -->
    <body class="main-layout inner_page">
@@ -36,13 +39,14 @@
          <div class="loader"><img src="images/loading.gif" alt="" /></div>
       </div>
       <!-- end loader -->
-      <div id="mobileNav" class="sidepanel">
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-         <a href="index.html">Ana Sayfa</a>
-         <a href="about.html">Hakkımızda</a>
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="index.html">Anasayfa</a>
+         <a href="about.html">Kurumsal</a>
          <a href="services.html">Hizmetlerimiz</a>
          <a href="projects.html">Projeler</a>
          <a href="blog.html">Blog</a>
+         <a href="references.html">Referanslar</a>
          <a href="contact.html">İletişim</a>
       </div>
       <!-- header -->
@@ -51,16 +55,17 @@
             <div class="container">
                <div class="navbar-brand">
                   <a href="index.html">
-                     <img src="images/logo.png" alt="Site Logo" class="logo-img">
+                     <img src="logo.png" alt="Arceer Mimarlık Logo" class="logo-img">
                   </a>
                </div>
                
                <ul class="main-menu d-none d-lg-flex">
-                  <li><a href="index.html">Ana Sayfa</a></li>
-                  <li><a href="about.html">Hakkımızda</a></li>
+                  <li><a href="index.html">Anasayfa</a></li>
+                  <li><a href="about.html">Kurumsal</a></li>
                   <li><a href="services.html">Hizmetlerimiz</a></li>
                   <li><a href="projects.html">Projeler</a></li>
                   <li><a href="blog.html">Blog</a></li>
+                  <li><a href="references.html">Referanslar</a></li>
                   <li><a href="contact.html" class="active">İletişim</a></li>
                </ul>
                
@@ -97,168 +102,512 @@
          </nav>
       </header>
       <!-- end header -->
-      <!-- Sayfa Başlık Alanı -->
-      <div class="page-header">
-         <div class="container">
-            <h1>İletişim</h1>
-            <nav aria-label="breadcrumb">
-               <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">İletişim</li>
-               </ol>
-            </nav>
-         </div>
+    
+      <!-- Mobil Menü -->
+      <div id="mobileNav" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="index.html">Ana Sayfa</a>
+         <a href="about.html">Kurumsal</a>
+         <a href="services.html">Hizmetlerimiz</a>
+         <a href="projects.html">Projeler</a>
+         <a href="blog.html">Blog</a>
+         <a href="references.html">Referanslar</a>
+         <a href="contact.html">İletişim</a>
       </div>
-      <!-- İletişim Bölümü -->
-      <div class="contact-page">
+    
+      <!-- page banner -->
+      <div class="page-banner">
          <div class="container">
             <div class="row">
-               <div class="col-md-12 mb-5">
-                  <div class="titlepage">
-                     <h2>Bizimle İletişime Geçin</h2>
-                     <p>Sorularınız, önerileriniz veya işbirliği fırsatları için bizimle iletişime geçebilirsiniz.</p>
+               <div class="col-md-12">
+                  <h1 class="page-title">İLETİŞİM</h1>
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">İletişim</li>
+                     </ol>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end page banner -->
+    
+      <!-- contact intro section -->
+      <div class="about-section section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 offset-md-2 text-center">
+                  <div class="about-content">
+                     <h2 class="section-title">Bize Ulaşın</h2>
+                     <p class="lead">Projeleriniz için teklif almak veya bilgi edinmek için bizimle iletişime geçin.</p>
+                     <p>Siz de hayalinizdeki projeyi gerçekleştirmek için Arceer Mimarlık'ın deneyimli ekibiyle çalışmak istiyorsanız, aşağıdaki iletişim kanallarından bize ulaşabilirsiniz. En kısa sürede size dönüş yapacağız.</p>
+                     <p>Ofislerimizi ziyaret ederek, portfolyomuzu inceleyebilir ve projeleriniz hakkında yüz yüze görüşebilirsiniz.</p>
                   </div>
                </div>
             </div>
-            
+         </div>
+      </div>
+      <!-- end contact intro section -->
+     
+      <!-- contact info boxes -->
+      <div class="contact-info-section section-padding bg-light">
+         <div class="container">
             <div class="row">
-               <div class="col-md-4 contact-info">
-                  <div class="contact-item">
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="contact-box">
                      <div class="contact-icon">
-                        <i class="fa fa-map-marker"></i>
+                        <i class="fas fa-map-marker-alt"></i>
                      </div>
-                     <div class="contact-details">
-                        <h3>Adres</h3>
-                        <p>İstanbul, Levent Mahallesi<br>Büyükdere Caddesi No: 123<br>Türkiye</p>
-                     </div>
-                  </div>
-                  
-                  <div class="contact-item">
-                     <div class="contact-icon">
-                        <i class="fa fa-phone"></i>
-                     </div>
-                     <div class="contact-details">
-                        <h3>Telefon</h3>
-                        <p>+90 555 123 4567<br>+90 212 456 7890</p>
-                     </div>
-                  </div>
-                  
-                  <div class="contact-item">
-                     <div class="contact-icon">
-                        <i class="fa fa-envelope"></i>
-                     </div>
-                     <div class="contact-details">
-                        <h3>E-posta</h3>
-                        <p>info@example.com<br>destek@example.com</p>
-                     </div>
-                  </div>
-                  
-                  <div class="contact-item">
-                     <div class="contact-icon">
-                        <i class="fa fa-clock-o"></i>
-                     </div>
-                     <div class="contact-details">
-                        <h3>Çalışma Saatleri</h3>
-                        <p>Pazartesi - Cuma: 09:00 - 18:00<br>Cumartesi: 10:00 - 14:00</p>
+                     <div class="contact-content">
+                        <h3>İzmir Ofisimiz</h3>
+                        <p>Alsancak Mah. Kıbrıs Şehitleri Cad. No:120 Kat:3, İzmir</p>
                      </div>
                   </div>
                </div>
                
-               <div class="col-md-8">
-                  <div class="main_form">
-                     <form id="contactForm">
-                        <div class="row">
-                           <div class="col-md-6 mb-4">
-                              <input class="form-control" placeholder="Adınız" type="text" name="name">
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="contact-box">
+                     <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                     </div>
+                     <div class="contact-content">
+                        <h3>İstanbul Ofisimiz</h3>
+                        <p>Bağdat Caddesi No:123, Kadıköy, İstanbul</p>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="contact-box">
+                     <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                     </div>
+                     <div class="contact-content">
+                        <h3>Telefon</h3>
+                        <p>+90 232 123 45 67</p>
+                        <p>+90 532 987 65 43</p>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="contact-box">
+                     <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                     </div>
+                     <div class="contact-content">
+                        <h3>E-posta</h3>
+                        <p><a href="mailto:info@arceer.com.tr">info@arceer.com.tr</a></p>
+                        <p><a href="mailto:proje@arceer.com.tr">proje@arceer.com.tr</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="row mt-4">
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="contact-box">
+                     <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                     </div>
+                     <div class="contact-content">
+                        <h3>Çalışma Saatleri</h3>
+                        <p>Hafta içi: 09:00 - 18:00</p>
+                        <p>Cumartesi: 09:00 - 14:00</p>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="contact-box">
+                     <div class="contact-icon">
+                        <i class="fas fa-fax"></i>
+                     </div>
+                     <div class="contact-content">
+                        <h3>Faks</h3>
+                        <p>+90 232 765 43 21</p>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="contact-box">
+                     <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                     </div>
+                     <div class="contact-content">
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/905321234567">+90 532 123 45 67</a></p>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="contact-box">
+                     <div class="contact-icon">
+                        <i class="fas fa-globe"></i>
+                     </div>
+                     <div class="contact-content">
+                        <h3>Sosyal Medya</h3>
+                        <div class="social-icons">
+                           <a href="#"><i class="fab fa-facebook-f"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                           <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact info boxes -->
+      
+      <!-- contact form and map -->
+      <div class="contact-section section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center mb-5">
+                  <h2 class="section-title">İletişim Formu</h2>
+                  <p class="section-subtitle">Projeleriniz için teklif almak veya bilgi edinmek için formu doldurun.</p>
+               </div>
+            </div>
+            
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="contact-form-wrapper">
+                     <form id="contact-form" class="contact-form">
+                        <div class="form-group mb-4">
+                           <label for="name">Adınız Soyadınız *</label>
+                           <input type="text" class="form-control" id="name" name="name" placeholder="Adınız Soyadınız" required>
+                        </div>
+                        
+                        <div class="form-group mb-4">
+                           <label for="email">E-posta Adresiniz *</label>
+                           <input type="email" class="form-control" id="email" name="email" placeholder="E-posta Adresiniz" required>
+                        </div>
+                        
+                        <div class="form-group mb-4">
+                           <label for="phone">Telefon Numaranız</label>
+                           <input type="tel" class="form-control" id="phone" name="phone" placeholder="Telefon Numaranız">
+                        </div>
+                        
+                        <div class="form-group mb-4">
+                           <label for="subject">Konu</label>
+                           <select class="form-control" id="subject" name="subject">
+                              <option value="" selected disabled>Konu Seçiniz</option>
+                              <option value="Konut Projesi">Konut Projesi</option>
+                              <option value="Ticari Proje">Ticari Proje</option>
+                              <option value="İç Mimari">İç Mimari</option>
+                              <option value="Peyzaj Tasarımı">Peyzaj Tasarımı</option>
+                              <option value="Danışmanlık">Danışmanlık</option>
+                              <option value="Diğer">Diğer</option>
+                           </select>
+                        </div>
+                        
+                        <div class="form-group mb-4">
+                           <label for="message">Mesajınız *</label>
+                           <textarea class="form-control" id="message" name="message" rows="5" placeholder="Mesajınız" required></textarea>
+                        </div>
+                        
+                        <div class="form-group mb-4">
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="privacyCheck" required>
+                              <label class="form-check-label" for="privacyCheck">
+                                 Kişisel verilerimin işlenmesine <a href="#">KVKK Aydınlatma Metni</a>'ni okudum, onay veriyorum.
+                              </label>
                            </div>
-                           <div class="col-md-6 mb-4">
-                              <input class="form-control" placeholder="E-posta Adresiniz" type="email" name="email">
-                           </div>
-                           <div class="col-md-12 mb-4">
-                              <input class="form-control" placeholder="Konu" type="text" name="subject">
-                           </div>
-                           <div class="col-md-12 mb-4">
-                              <textarea class="textarea" placeholder="Mesajınız" name="message"></textarea>
-                           </div>
-                           <div class="col-md-12">
-                              <button class="send btn-custom">Mesajı Gönder</button>
-                           </div>
+                        </div>
+                        
+                        <div class="text-center">
+                           <button type="submit" class="submit_btn">Gönder</button>
                         </div>
                      </form>
                   </div>
                </div>
-            </div>
-         </div>
-      </div>
-      <!-- Harita Bölümü -->
-      <div class="container-fluid mt-5">
-         <div class="row">
-            <div class="col-md-12 p-0">
-               <div id="map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385398.5897809314!2d28.731993344253553!3d41.00498228699285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1624881149699!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               
+               <div class="col-lg-6 mt-5 mt-lg-0">
+                  <div class="contact-map-wrapper">
+                     <div id="contact-map" style="height: 450px; border-radius: 10px; overflow: hidden;"></div>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- footer -->
-      <footer class="footer">
+      <!-- end contact form and map -->
+      
+      <!-- directions section -->
+      <div class="directions-section section-padding bg-light">
          <div class="container">
             <div class="row">
-               <div class="col-md-4">
-                  <div class="reader">
-                     <h3>Hakkımızda</h3>
-                     <p>Şirketimiz, 2005 yılında kurulmuş olup, inşaat sektöründe öncü bir firma olarak hizmet vermektedir. Müşteri memnuniyetini her zaman ön planda tutarak, kaliteli ve güvenilir hizmet sunmayı ilke edindik.</p>
+               <div class="col-md-12 text-center mb-5">
+                  <h2 class="section-title">Bize Nasıl Ulaşabilirsiniz?</h2>
+                  <p class="section-subtitle">İzmir ve İstanbul ofislerimize ulaşım bilgileri</p>
+               </div>
+            </div>
+            
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="office-directions">
+                     <h3>İzmir Ofisimiz</h3>
+                     <div class="direction-item">
+                        <i class="fas fa-car"></i>
+                        <div>
+                           <h4>Özel Araç</h4>
+                           <p>Alsancak bölgesinde, Kıbrıs Şehitleri Caddesi üzerinde yer alan ofisimize kolayca ulaşabilirsiniz. Binaya yakın ücretli otoparklar mevcuttur.</p>
+                        </div>
+                     </div>
+                     
+                     <div class="direction-item">
+                        <i class="fas fa-bus"></i>
+                        <div>
+                           <h4>Toplu Taşıma</h4>
+                           <p>Alsancak otobüs duraklarından yürüme mesafesindeyiz. 12, 20, 802 numaralı otobüs hatları ile ulaşım sağlayabilirsiniz.</p>
+                        </div>
+                     </div>
+                     
+                     <div class="direction-item">
+                        <i class="fas fa-subway"></i>
+                        <div>
+                           <h4>Metro</h4>
+                           <p>İzban Alsancak durağından indikten sonra yaklaşık 5 dakikalık yürüme mesafesindeyiz.</p>
+                        </div>
+                     </div>
                   </div>
                </div>
-               <div class="col-md-4">
-                  <div class="reader">
-                     <h3>Hızlı Linkler</h3>
-                     <ul class="xple_menu">
-                        <li><a href="index.html">Ana Sayfa</a></li>
-                        <li><a href="about.html">Hakkımızda</a></li>
-                        <li><a href="services.html">Hizmetlerimiz</a></li>
-                        <li><a href="projects.html">Projeler</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">İletişim</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="reader">
-                     <h3>İletişim Bilgileri</h3>
-                     <ul class="xple_menu">
-                        <li><a href="#"><i class="fa fa-map-marker"></i> İstanbul, Türkiye</a></li>
-                        <li><a href="#"><i class="fa fa-phone"></i> +90 555 123 4567</a></li>
-                        <li><a href="#"><i class="fa fa-envelope"></i> info@example.com</a></li>
-                     </ul>
-                     <ul class="social_icon">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                     </ul>
+               
+               <div class="col-md-6">
+                  <div class="office-directions">
+                     <h3>İstanbul Ofisimiz</h3>
+                     <div class="direction-item">
+                        <i class="fas fa-car"></i>
+                        <div>
+                           <h4>Özel Araç</h4>
+                           <p>Kadıköy Bağdat Caddesi üzerinde bulunan ofisimize E-5 karayolu veya sahil yolu üzerinden ulaşabilirsiniz. Çevrede ücretli otoparklar mevcuttur.</p>
+                        </div>
+                     </div>
+                     
+                     <div class="direction-item">
+                        <i class="fas fa-bus"></i>
+                        <div>
+                           <h4>Toplu Taşıma</h4>
+                           <p>8, 14, 19 numaralı otobüs hatları Bağdat Caddesi duraklarında durmaktadır. Ofisimiz durağa 3 dakikalık yürüme mesafesindedir.</p>
+                        </div>
+                     </div>
+                     
+                     <div class="direction-item">
+                        <i class="fas fa-subway"></i>
+                        <div>
+                           <h4>Metro</h4>
+                           <p>Marmaray Söğütlüçeşme istasyonu veya Metro M4 Göztepe istasyonundan minibüslerle Bağdat Caddesi'ne ulaşabilirsiniz.</p>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
-         <div class="copyright">
+      </div>
+      <!-- end directions section -->
+      
+      <!-- FAQ section -->
+      <div class="faq-section section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center mb-5">
+                  <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+                  <p class="section-subtitle">İletişim sürecinde sıkça sorulan sorular ve yanıtları</p>
+               </div>
+            </div>
+            
+            <div class="row">
+               <div class="col-lg-8 offset-lg-2">
+                  <div class="accordion" id="faqAccordion">
+                     <!-- FAQ Item 1 -->
+                     <div class="card">
+                        <div class="card-header" id="headingOne">
+                           <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 Proje teklifi almak için nasıl başvurabilirim?
+                              </button>
+                           </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                           <div class="card-body">
+                              Proje teklifi almak için web sitemizde bulunan iletişim formunu doldurabilir, info@arceer.com.tr adresine e-posta gönderebilir veya +90 232 123 45 67 numaralı telefondan bize ulaşabilirsiniz. Sizi en kısa sürede arayarak detaylı bilgi vereceğiz.
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <!-- FAQ Item 2 -->
+                     <div class="card">
+                        <div class="card-header" id="headingTwo">
+                           <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 İlk görüşme için randevu almak zorunda mıyım?
+                              </button>
+                           </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                           <div class="card-body">
+                              Ofisimizde daha verimli bir görüşme yapabilmek için önceden randevu almanızı öneririz. Böylece size özel zaman ayırabilir ve projelerinizle ilgili detaylı konuşma fırsatı bulabiliriz. Randevu almak için telefon veya e-posta yoluyla bize ulaşabilirsiniz.
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <!-- FAQ Item 3 -->
+                     <div class="card">
+                        <div class="card-header" id="headingThree">
+                           <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 Proje süreci nasıl işliyor?
+                              </button>
+                           </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                           <div class="card-body">
+                              Proje sürecimiz genellikle şu adımlardan oluşur: İlk görüşme ve ihtiyaç analizi, konsept tasarım, revizyon, uygulama projesi hazırlığı, bütçe ve zaman planlaması, izin/ruhsat süreçleri ve uygulama aşaması. Her aşamada sizinle iletişim halinde olup, onayınızı alarak ilerleriz.
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <!-- FAQ Item 4 -->
+                     <div class="card">
+                        <div class="card-header" id="headingFour">
+                           <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                 İzmir dışında projeler yapıyor musunuz?
+                              </button>
+                           </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                           <div class="card-body">
+                              Evet, İzmir ve İstanbul dışında, Türkiye'nin her bölgesinde ve yurt dışında da projeler gerçekleştirmekteyiz. Mesafe konusunda endişelenmenize gerek yok, gerekli tüm süreçleri uzaktan da etkili bir şekilde yönetebiliyoruz. Uzaktaki projelerde düzenli saha ziyaretleri yaparak projenin kalitesini garanti altına alıyoruz.
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <!-- FAQ Item 5 -->
+                     <div class="card">
+                        <div class="card-header" id="headingFive">
+                           <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                 Fiyatlandırma politikanız nasıl?
+                              </button>
+                           </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                           <div class="card-body">
+                              Fiyatlandırmamız projenin kapsamına, büyüklüğüne ve gereksinimlerine göre değişmektedir. Her proje için özel teklif hazırlıyoruz. İlk görüşmede projeniz hakkında detaylı bilgi aldıktan sonra size özel bir fiyat teklifi sunabiliriz. Şeffaf fiyatlandırma politikamızla, tüm maliyet kalemlerini detaylı olarak belirtiyoruz.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end FAQ section -->
+
+      <!-- footer -->
+      <footer>
+         <div class="footer">
             <div class="container">
                <div class="row">
-                  <div class="col-md-12">
-                     <p>© 2023 Tüm Hakları Saklıdır. <a href="#">Basco</a></p>
+                  <div class="col-md-4 col-sm-6">
+                     <div class="reader">
+                        <a href="index.html"><img src="logo.png" alt="Arceer Mimarlık Logo"/></a>
+                        <p class="padd_flet40">Arceer Mimarlık olarak, her projeye özgün bir yaklaşımla, yaşam alanlarınızı en verimli şekilde tasarlıyoruz. Sürdürülebilir ve çevre dostu çözümlerle, hayalinizdeki mekanları gerçeğe dönüştürüyoruz.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-2 col-sm-6">
+                     <div class="reader">
+                        <h3>Keşfet</h3>
+                        <ul class="xple_menu">
+                           <li><a href="index.html">Ana Sayfa</a></li>
+                           <li><a href="about.html">Hakkımızda</a></li>
+                           <li><a href="services.html">Hizmetlerimiz</a></li>
+                           <li><a href="projects.html">Projeler</a></li>
+                           <li><a href="blog.html">Blog</a></li>
+                           <li><a href="references.html">Referanslar</a></li>
+                           <li><a href="contact.html">İletişim</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="reader">
+                        <h3>Son Projeler</h3>
+                        <ul class="re_post">
+                           <li><img src="images/re_img1.jpg" alt="Proje Görseli"/></li>
+                           <li><img src="images/re_img2.jpg" alt="Proje Görseli"/></li>
+                           <li><img src="images/re_img3.jpg" alt="Proje Görseli"/></li>
+                           <li><img src="images/re_img4.jpg" alt="Proje Görseli"/></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="reader">
+                        <h3>İletişim</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Bağdat Caddesi No:123, Kadıköy, İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 555 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@arceer.com</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright text_align_center">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 offset-md-1">
+                        <p>Copyright 2024 Tüm Hakları Saklıdır - Arceer Mimarlık</p>
+                     </div>
+                     <div class="col-md-3">
+                        <ul class="social_icon_footer">
+                           <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </footer>
       <!-- end footer -->
+      
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- Leaflet Map -->
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <!-- Animasyon -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      <script>
+          // WOW.js başlatma
+          new WOW().init();
+          
+          // Harita başlatma
+          document.addEventListener('DOMContentLoaded', function() {
+              var map = L.map('contact-map').setView([38.4237, 27.1428], 13); // İzmir koordinatları
+              
+              L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              }).addTo(map);
+              
+              // İzmir Ofisi marker
+              var izmirMarker = L.marker([38.4237, 27.1428]).addTo(map);
+              izmirMarker.bindPopup("<b>Arceer Mimarlık İzmir Ofisi</b><br>Alsancak Mah. Kıbrıs Şehitleri Cad. No:120 Kat:3").openPopup();
+              
+              // Form gönderimi
+              document.getElementById('contact-form').addEventListener('submit', function(e) {
+                  e.preventDefault();
+                  alert('Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.');
+                  this.reset();
+              });
+          });
+      </script>
    </body>
 </html>

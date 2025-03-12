@@ -12,6 +12,10 @@
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- style css -->
@@ -19,7 +23,7 @@
       <!-- responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- awesome fontfamily -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -49,11 +53,12 @@
                </div>
                
                <ul class="main-menu d-none d-lg-flex">
-                  <li><a href="index.html" class="active">Ana Sayfa</a></li>
-                  <li><a href="about.html">Hakkımızda</a></li>
+                  <li><a href="index.html" class="active">Anasayfa</a></li>
+                  <li><a href="about.html">Kurumsal</a></li>
                   <li><a href="services.html">Hizmetlerimiz</a></li>
                   <li><a href="projects.html">Projeler</a></li>
                   <li><a href="blog.html">Blog</a></li>
+                  <li><a href="references.html">Referanslar</a></li>
                   <li><a href="contact.html">İletişim</a></li>
                </ul>
                
@@ -127,6 +132,7 @@
          </div>
       </div>
       <!-- end slider section -->
+
       <!-- six_box-->
       <div id="about" class="about top_layer">
          <div class="container">
@@ -168,7 +174,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>BİR YAPI <br><span class="yello">MİMARİYE DÖNÜŞTÜĞÜNDE <br></span> SANATA DÖNÜŞÜR</h2>
+                     <h2>BİR YAPI <br><span style="color: var(--quaternary-color)">MİMARİYE DÖNÜŞTÜĞÜNDE <br></span> SANATA DÖNÜŞÜR</h2>
                      <p>Arceer Mimarlık olarak, her projemizde mimari estetiği ve işlevselliği bir araya getiriyoruz. Modern çizgiler, yerel dokular ve sürdürülebilir tasarım anlayışıyla, yaşam alanlarınıza değer katıyoruz. Çeşme ve İzmir'in eşsiz dokusunu yansıtan projelerimizle, bölgenin mimari kimliğine katkıda bulunuyoruz.</p>
                   </div>
                </div>
@@ -176,13 +182,99 @@
          </div>
       </div>
       <!-- end building -->
+      <section class="about_section layout_padding long_section">
+         <style>
+             .about_section .img-box {
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .about_section {
+    background-color: #ffffff;
+    padding: 100px 0;
+  }
+
+  .about_section .row {
+    align-items: center;
+  }
+
+  .about_section .img-box img {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .about_section .img-box:hover img {
+    transform: scale(1.05);
+  }
+
+  .about_section .detail-box {
+    padding-left: 30px;
+  }
+
+  .about_section .detail-box h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #2c3e50;
+  }
+
+  .about_section .detail-box p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 35px;
+  }
+
+  .about_section .detail-box a {
+    display: inline-block;
+    padding: 12px 45px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    border-radius: 4px;
+    border: 2px solid #2c3e50;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .about_section .detail-box a:hover {
+    background-color: transparent;
+    color: #2c3e50;
+  }
+         </style>
+         <div class="container">
+           <div class="row">
+             <div class="col-md-6">
+                 <img src="images/about-img.png" alt="Modern Mimarlık Ofisi">
+             </div>
+             <div class="col-md-6">
+               <div class="detail-box">
+                 <div class="heading_container">
+                   <h2>
+                     Mimari Yaklaşımımız
+                   </h2>
+                 </div>
+                 <p>
+                   İzmir ve Çeşme'de, her projeyi benzersiz bir sanat eseri olarak ele alıyoruz. Modern mimari çizgiler ile Ege'nin geleneksel dokusunu harmanlayan tasarım anlayışımızla, yaşam alanlarınıza değer katıyoruz. Sürdürülebilir yapı teknolojilerini kullanarak, çevre dostu ve enerji verimli projeler geliştiriyoruz. Uzman ekibimiz, her aşamada sizinle yakın iletişim kurarak, hayallerinizi gerçeğe dönüştürüyor.
+                 </p>
+                 <a href="">
+                   Projelerimizi İnceleyin
+                 </a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
       <!-- services -->
       <div class="services_main">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Hizmetlerimiz</h2>
+                     <h2>HİZMETLERİMİZ</h2>
                      <span>Profesyonel mimarlık ve mühendislik hizmetlerimizle projelerinizi hayata geçiriyoruz</span>
                   </div>
                </div>
@@ -211,7 +303,7 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img1.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Modern Villa Tasarımları</span>
                                     </div>
                                  </div>
                               </div>
@@ -221,7 +313,7 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img2.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Lüks Konut Projeleri</span>
                                     </div>
                                  </div>
                               </div>
@@ -231,7 +323,7 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img3.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Özel Tasarım Villalar</span>
                                     </div>
                                  </div>
                               </div>
@@ -241,13 +333,13 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img4.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Müstakil Ev Projeleri</span>
                                     </div>
                                  </div>
                               </div>
                            </div>
                            <div class="col-sm-6 margin_top40">
-                              <a class="read_more " href="Javascript:void(0)">Read More</a>
+                              <a class="read_more " href="Javascript:void(0)">Detaylı Bilgi</a>
                            </div>
                         </div>
                      </div>
@@ -258,7 +350,7 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img3.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Otel Projeleri</span>
                                     </div>
                                  </div>
                               </div>
@@ -268,7 +360,7 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img2.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>İş Merkezi Projeleri</span>
                                     </div>
                                  </div>
                               </div>
@@ -278,7 +370,7 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img4.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>AVM Projeleri</span>
                                     </div>
                                  </div>
                               </div>
@@ -288,13 +380,13 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img1.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Ticari Yapılar</span>
                                     </div>
                                  </div>
                               </div>
                            </div>
                            <div class="col-sm-6 margin_top40">
-                              <a class="read_more " href="Javascript:void(0)">Read More</a>
+                              <a class="read_more " href="Javascript:void(0)">Detaylı Bilgi</a>
                            </div>
                         </div>
                      </div>
@@ -305,7 +397,7 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img4.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Tarihi Yapı Restorasyonu</span>
                                     </div>
                                  </div>
                               </div>
@@ -315,7 +407,7 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img2.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Cephe Yenileme</span>
                                     </div>
                                  </div>
                               </div>
@@ -325,7 +417,7 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img1.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>Bina Güçlendirme</span>
                                     </div>
                                  </div>
                               </div>
@@ -335,13 +427,13 @@
                                  <div class="services_img">
                                     <figure><img src="images/service_img3.png" alt="#" />  </figure>
                                     <div class="ho_dist">
-                                       <span>Reader will be distracted</span>
+                                       <span>İç Mekan Renovasyonu</span>
                                     </div>
                                  </div>
                               </div>
                            </div>
                            <div class="col-sm-6 margin_top40">
-                              <a class="read_more " href="Javascript:void(0)">Read More</a>
+                              <a class="read_more " href="Javascript:void(0)">Detaylı Bilgi</a>
                            </div>
                         </div>
                      </div>
@@ -371,19 +463,286 @@
          </div>
       </div>
       <!-- end instant -->
+
+      <!-- Blog Section -->
+      <div class="blog_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>BLOG</h2>
+                     <span>En son mimari trendler ve projelerimiz hakkında bilgi edinin</span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="blog_box wow fadeInUp" data-wow-delay="0.2s">
+                     <div class="blog_img">
+                        <figure><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Modern Villa Tasarımı"/></figure>
+                        <div class="blog_overlay">
+                           <a href="#" class="read_more">Devamını Oku</a>
+                        </div>
+                     </div>
+                     <div class="blog_text">
+                        <span class="date">15 Mayıs 2024</span>
+                        <h3>Modern Villa Tasarımında Yeni Trendler</h3>
+                        <p>Çeşme'nin eşsiz doğası ile bütünleşen modern villa tasarımlarında son trendleri ve yaklaşımları inceliyoruz.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="blog_box wow fadeInUp" data-wow-delay="0.4s">
+                     <div class="blog_img">
+                        <figure><img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sürdürülebilir Mimari"/></figure>
+                        <div class="blog_overlay">
+                           <a href="#" class="read_more">Devamını Oku</a>
+                        </div>
+                     </div>
+                     <div class="blog_text">
+                        <span class="date">28 Nisan 2024</span>
+                        <h3>Sürdürülebilir Mimari Çözümler</h3>
+                        <p>Enerji verimliliği ve doğa dostu malzemelerle sürdürülebilir mimari projelerimizi nasıl geliştiriyoruz?</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="blog_box wow fadeInUp" data-wow-delay="0.6s">
+                     <div class="blog_img">
+                        <figure><img src="https://gizempakyurek.com/uploads/images/1662370106673-carpici-bir-minimalist-ic-tasarim-yaratmak-icin-7-ipucu.jpg" alt="İç Mekan Tasarımı"/></figure>
+                        <div class="blog_overlay">
+                           <a href="#" class="read_more">Devamını Oku</a>
+                        </div>
+                     </div>
+                     <div class="blog_text">
+                        <span class="date">10 Nisan 2024</span>
+                        <h3>İç Mekan Tasarımında Minimalizm</h3>
+                        <p>Minimalist iç mekan tasarımlarıyla nasıl ferah ve fonksiyonel yaşam alanları oluşturuyoruz?</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  <a href="blog.html" class="read_more blog_btn">Tüm Yazılar</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Blog Section -->
+
+      <!-- References Section -->
+      <div class="references_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>REFERANSLARIMIZ</h2>
+                     <span>İş birliklerimiz ile çalıştığımız markalar</span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="references_slider">
+                     <div class="owl-carousel owl-theme">
+                        <div class="item wow fadeInUp" data-wow-delay="0.2s">
+                           <div class="reference_box">
+                              <figure><img src="https://misircarsisi.com/iglyshyv/2023/12/vitra1.png" alt="Vitra" title="Vitra"></figure>
+                           </div>
+                        </div>
+                        <div class="item wow fadeInUp" data-wow-delay="0.3s">
+                           <div class="reference_box">
+                              <figure><img src="https://www1.lovethatdesign.com/wp-content/uploads/2023/11/Knoll_Logo-1024x380.png" alt="Knoll" title="Knoll"></figure>
+                           </div>
+                        </div>
+                        <div class="item wow fadeInUp" data-wow-delay="0.4s">
+                           <div class="reference_box">
+                              <figure><img src="https://www.mesa.com.tr/img/logolar/mesameskenD2.png?v6" alt="Mesa" title="Mesa"></figure>
+                           </div>
+                        </div>
+                        <div class="item wow fadeInUp" data-wow-delay="0.5s">
+                           <div class="reference_box">
+                              <figure><img src="https://www.eczacibasi.com.tr/assets/eczacibasi-logo-2023.png" alt="Eczacıbaşı Yapı" title="Eczacıbaşı Yapı"></figure>
+                           </div>
+                        </div>
+                        <div class="item wow fadeInUp" data-wow-delay="0.6s">
+                           <div class="reference_box">
+                              <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kale_Holding_logo.svg/1200px-Kale_Holding_logo.svg.png" alt="Kale" title="Kale"></figure>
+                           </div>
+                        </div>
+                        <div class="item wow fadeInUp" data-wow-delay="0.7s">
+                           <div class="reference_box">
+                              <figure><img src="https://cdn.prod.website-files.com/653aeec087292b830db7180e/66e418dbed9b00642400f983_TEPE%20HOME.webp" alt="Tepe Home" title="Tepe Home"></figure>
+                           </div>
+                        </div>
+                        <div class="item wow fadeInUp" data-wow-delay="0.8s">
+                           <div class="reference_box">
+                                 <figure><img src="https://cdn.freebiesupply.com/logos/large/2x/ytong-1-logo-black-and-white.png" alt="Ytong" title="Ytong"></figure>
+                           </div>
+                        </div>
+                        <div class="item wow fadeInUp" data-wow-delay="0.9s">
+                           <div class="reference_box">
+                              <figure><img src="https://i0.wp.com/bi-ozet.com/wp-content/uploads/2016/02/1454670942_nef_aurali_logo.png?fit=940%2C360&ssl=1" alt="Nef" title="Nef"></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="references_testimonials">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="testimonial_slider">
+                                 <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                       <div class="testimonial_box">
+                                          <div class="testimonial_content">
+                                             <p>"Arceer Mimarlık ekibi, hayalimizdeki villayı tam istediğimiz gibi tasarladı. Profesyonel yaklaşımları ve yaratıcı çözümleriyle beklentilerimizin ötesine geçtiler."</p>
+                                          </div>
+                                          <div class="testimonial_person">
+                                             <div class="person_img">
+                                                <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Ahmet Yılmaz">
+                                             </div>
+                                             <div class="person_info">
+                                                <h3>Ahmet Yılmaz</h3>
+                                                <p>Çeşme Villa Projesi</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="testimonial_box">
+                                          <div class="testimonial_content">
+                                             <p>"İzmir'deki ofis projemizde Arceer Mimarlık ile çalışmak çok keyifliydi. Modern ve fonksiyonel bir çalışma alanı yaratarak iş verimliliğimizi artırdılar."</p>
+                                          </div>
+                                          <div class="testimonial_person">
+                                             <div class="person_img">
+                                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Ayşe Kaya">
+                                             </div>
+                                             <div class="person_info">
+                                                <h3>Ayşe Kaya</h3>
+                                                <p>İzmir Ofis Projesi</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="testimonial_box">
+                                          <div class="testimonial_content">
+                                             <p>"Sürdürülebilir mimari konusunda gösterdikleri hassasiyet ve inovatif çözümler için Arceer Mimarlık'a teşekkür ederiz. Enerji verimli evimizle çevreye katkıda bulunuyoruz."</p>
+                                          </div>
+                                          <div class="testimonial_person">
+                                             <div class="person_img">
+                                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Mehmet Demir">
+                                             </div>
+                                             <div class="person_info">
+                                                <h3>Mehmet Demir</h3>
+                                                <p>Urla Eco-Ev Projesi</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End References Section -->
+
+      <!-- Contact Section -->
+      <div class="contact_section" id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>BİZE ULAŞIN</h2>
+                     <span>Projeleriniz için teklif almak veya bilgi edinmek için formu doldurun, en kısa sürede dönüş yapalım.</span>
+                  </div>
+               </div>
+            <div class="row">
+               <div class="col-md-5">
+                  <div class="row">
+                     <div class="col-md-6 mb-4">
+                        <div class="contact_box">
+                           <div class="contact_box_icon">
+                              <i class="fa-solid fa-location-dot"></i>
+                           </div>
+                           <div class="contact_box_content">
+                              <h3>ANA OFİSİMİZ</h3>
+                              <p>Alsancak Mah. Kıbrıs Şehitleri Cad.<br>No:120 Kat:3, İzmir</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 mb-4">
+                        <div class="contact_box">
+                           <div class="contact_box_icon">
+                              <i class="fa-solid fa-phone"></i>
+                           </div>
+                           <div class="contact_box_content">
+                              <h3>TELEFON NUMARASI</h3>
+                              <p>+90 232 123 45 67</p>
+                              <p>+90 532 987 65 43</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 mb-4">
+                        <div class="contact_box">
+                           <div class="contact_box_icon">
+                              <i class="fa-solid fa-fax"></i>
+                           </div>
+                           <div class="contact_box_content">
+                              <h3>FAKS</h3>
+                              <p>+90 232 765 43 21</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 mb-4">
+                        <div class="contact_box">
+                           <div class="contact_box_icon">
+                              <i class="fa-solid fa-envelope"></i>
+                           </div>
+                           <div class="contact_box_content">
+                              <h3>E-POSTA</h3>
+                              <p><a href="mailto:info@arceer.com.tr">info@arceer.com.tr</a></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="contact_us_form">
+                     <h2>Contact Us</h2>
+                     <form id="contact_form">
+                        <div class="form-group mb-4">
+                           <input type="text" class="form-control" placeholder="Adınız Soyadınız" name="name">
+                        </div>
+                        <div class="form-group mb-4">
+                           <input type="email" class="form-control" placeholder="E-posta Adresiniz" name="email">
+                        </div>
+                        <div class="form-group mb-4">
+                           <textarea class="form-control" rows="5" placeholder="Mesajınız" name="message"></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                           <button type="submit" class="submit_btn">GÖNDER</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Contact Section -->
+      
       <!-- footer -->
       <footer>
          <div class="footer">
             <div class="container">
                <div class="row">
-                  <div class="col-md-10 offset-md-1">
-                     <ul class="social_icon text_align_center">
-                        <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
                   <div class="col-md-4 col-sm-6">
                      <div class="reader">
                         <a href="index.html"><img src="logo.png" alt="#"/></a>
@@ -423,8 +782,16 @@
             <div class="copyright text_align_center">
                <div class="container">
                   <div class="row">
-                     <div class="col-md-10 offset-md-1">
+                     <div class="col-md-8 offset-md-1">
                         <p>Copyright 2024 Tüm Hakları Saklıdır - Arceer Mimarlık</p>
+                     </div>
+                     <div class="col-md-3">
+                        <ul class="social_icon_footer">
+                           <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
                      </div>
                   </div>
                </div>
@@ -437,6 +804,101 @@
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/custom.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- Animasyon ve Carousel -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+      
+      <script>
+          // WOW.js başlatma
+          new WOW().init();
+          
+          // Owl Carousel başlatma
+          $(document).ready(function(){
+              // Referanslar için carousel
+              $(".references_slider .owl-carousel").owlCarousel({
+                  loop: true,
+                  margin: 20,
+                  nav: true,
+                  dots: true,
+                  autoplay: true,
+                  autoplayTimeout: 3000,
+                  autoplayHoverPause: true,
+                  responsive: {
+                      0: {
+                          items: 2
+                      },
+                      576: {
+                          items: 3
+                      },
+                      992: {
+                          items: 5
+                      }
+                  }
+              });
+              
+              // Testimonial için carousel
+              $(".testimonial_slider .owl-carousel").owlCarousel({
+                  loop: true,
+                  margin: 20,
+                  nav: true,
+                  dots: true,
+                  autoplay: true,
+                  autoplayTimeout: 5000,
+                  autoplayHoverPause: true,
+                  items: 1
+              });
+              
+              // Mouse trail efekti
+              const trail = document.createElement("div");
+              trail.className = "mouse-trail";
+              document.body.appendChild(trail);
+              
+              let mouseX = 0;
+              let mouseY = 0;
+              let trailX = 0;
+              let trailY = 0;
+              
+              document.addEventListener("mousemove", (e) => {
+                  mouseX = e.pageX;
+                  mouseY = e.pageY;
+              });
+              
+              function animate() {
+                  // Trail pozisyonunu güncelle
+                  let distX = mouseX - trailX;
+                  let distY = mouseY - trailY;
+                  
+                  trailX = trailX + (distX * 0.1);
+                  trailY = trailY + (distY * 0.1);
+                  
+                  trail.style.left = trailX + "px";
+                  trail.style.top = trailY + "px";
+                  
+                  requestAnimationFrame(animate);
+              }
+              
+              animate();
+              
+              // Linkler ve elementler üzerinde hover olduğunda trail efektini artırma
+              const interactiveElements = document.querySelectorAll('a, button, .blog_box, .reference_box, .testimonial_box');
+              
+              interactiveElements.forEach(el => {
+                  el.addEventListener('mouseenter', () => {
+                      trail.style.width = "20px";
+                      trail.style.height = "20px";
+                      trail.style.opacity = "0.9";
+                  });
+                  
+                  el.addEventListener('mouseleave', () => {
+                      trail.style.width = "10px";
+                      trail.style.height = "10px";
+                      trail.style.opacity = "0.7";
+                  });
+              });
+          });
+      </script>
    </body>
 </html>
 
@@ -467,7 +929,7 @@
 }
 
 .logo-img {
-   max-height: 80px;
+   max-height: 60px;
    width: auto;
    display: block;
    object-fit: contain;
@@ -556,6 +1018,106 @@
    
    .navbar-actions {
       gap: 0.5rem;
+   }
+}
+
+/* İletişim Bölümü Stilleri */
+
+
+
+.contact_box {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 0;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.contact_box_icon {
+   margin-bottom: 15px;
+}
+
+.contact_box_icon i {
+   font-size: 36px;
+   color: rgba(var(--quaternary-color), 0.95);
+}
+
+.contact_box_content h3 {
+   font-size: 12px;
+   font-weight: 600;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   color: #333;
+}
+
+.contact_box_content p {
+   font-size: 14px;
+   margin-bottom: 5px;
+   color: #555;
+}
+
+.contact_box_content a {
+   color: #555;
+   text-decoration: none;
+}
+
+.contact_box_content a:hover {
+   color: rgba(var(--quaternary-color), 0.95)
+}
+
+.contact_us_form {
+    background-color: rgba(#E4E4E4, 0.95);
+    padding: 30px;
+    height: 86%;
+}
+
+.contact_us_form h2 {
+   font-size: 24px;
+   margin-bottom: 25px;
+   color: black;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.contact_us_form .form-control {
+   background-color: #fff;
+   border: none;
+   border-radius: 0;
+   padding: 15px;
+   height: auto;
+   font-size: 14px;
+}
+
+.contact_us_form textarea.form-control {
+   resize: none;
+}
+
+.submit_btn {
+   background-color: #222831;
+   color: #fff;
+   border: none;
+   padding: 12px 40px;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+
+.submit_btn:hover {
+   background-color: #333;
+}
+
+@media (max-width: 768px) {
+   .contact_box {
+      margin-bottom: 20px;
+   }
+   
+   .contact_us_form {
+      margin-top: 30px;
    }
 }
 </style>
