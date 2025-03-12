@@ -1,0 +1,508 @@
+/* Projeler Sayfası için Özel CSS */
+
+/* Genel Projeler Stilleri */
+.inner_page .section-padding {
+    padding: 80px 0;
+}
+
+.inner_page .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+.inner_page .section-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* İstatistik Kutuları */
+.project-stats {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.stat-item {
+    padding: 15px 10px;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--tertiary-color, #AC242D);
+    margin-bottom: 5px;
+}
+
+.stat-text {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+.experience-box {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-color: var(--tertiary-color, #AC242D);
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: float 3s ease-in-out infinite;
+}
+
+.experience-box .years {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.experience-box .text {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Proje Filtreleri */
+.portfolio-filter {
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--tertiary-color, #AC242D);
+    border-color: var(--tertiary-color, #AC242D);
+    color: #fff;
+}
+
+/* Proje Kartları */
+.portfolio-grid {
+    margin-bottom: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-thumbnail img {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-overlay i {
+    color: #fff;
+    font-size: 40px;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-card:hover .project-overlay i {
+    transform: scale(1);
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-category {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.project-category i {
+    color: var(--tertiary-color, #AC242D);
+    margin-right: 5px;
+}
+
+.project-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    color: var(--tertiary-color, #AC242D);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover {
+    color: #005a4c;
+}
+
+.project-link:hover i {
+    transform: translateX(5px);
+}
+
+/* Sayfalama */
+.pagination {
+    margin-top: 30px;
+}
+
+.pagination .page-link {
+    color: #333;
+    border-color: #ddd;
+    padding: 8px 15px;
+    margin: 0 3px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--tertiary-color, #AC242D);
+    border-color: var(--tertiary-color, #AC242D);
+    color: #fff;
+}
+
+.pagination .page-link:hover {
+    background-color: #f5f5f5;
+    color: var(--tertiary-color, #AC242D);
+}
+
+/* Öne Çıkan Proje Bölümü */
+.featured-project {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.featured-project-content {
+    padding-right: 30px;
+}
+
+.featured-project-content h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.featured-project-content .lead {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.featured-project-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.feature-list li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: var(--tertiary-color, #AC242D);
+    font-size: 18px;
+}
+
+.featured-project-image {
+    position: relative;
+}
+
+.featured-badge {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 2;
+}
+
+.featured-badge img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Müşteri Yorumları */
+.testimonial-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-quote {
+    font-size: 40px;
+    color: var(--tertiary-color, #AC242D);
+    opacity: 0.2;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 25px;
+    min-height: 100px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    border: 3px solid #f8f9fa;
+}
+
+.author-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.author-info p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+/* CTA Bölümü */
+.cta-section {
+    background-color: var(--tertiary-color, #AC242D);
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-section .read_more {
+    background-color: #fff;
+    color: var(--tertiary-color, #AC242D);
+    border: 2px solid #fff;
+}
+
+.cta-section .read_more:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+/* Portfolio Grid Düzenlemesi */
+.portfolio-item {
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .featured-project-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .project-thumbnail img {
+        height: 220px;
+    }
+    
+    .experience-box {
+        bottom: 20px;
+        left: 20px;
+        padding: 10px 15px;
+    }
+    
+    .experience-box .years {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .inner_page .section-title {
+        font-size: 28px;
+    }
+    
+    .filter-btn {
+        padding: 8px 15px;
+        margin: 0 3px 8px;
+        font-size: 13px;
+    }
+    
+    .project-info {
+        padding: 20px;
+    }
+    
+    .testimonial-card {
+        margin-bottom: 20px;
+    }
+    
+    .cta-section h2 {
+        font-size: 26px;
+    }
+    
+    .about-section .about-image {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .stat-number {
+        font-size: 28px;
+    }
+    
+    .stat-text {
+        font-size: 12px;
+    }
+    
+    .project-thumbnail img {
+        height: 200px;
+    }
+    
+    .featured-project-content h3 {
+        font-size: 24px;
+    }
+    
+    .testimonial-card {
+        padding: 20px;
+    }
+    
+    .author-img {
+        width: 50px;
+        height: 50px;
+    }
+} 
