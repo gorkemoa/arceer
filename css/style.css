@@ -1990,7 +1990,7 @@ ul.social_icon_footer li a:hover {
 }
 
 .breadcrumb-item.active {
-    color: #f2c301;
+    color: var(--tertiary-color);
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -2046,7 +2046,7 @@ ul.social_icon_footer li a:hover {
     position: absolute;
     left: 0;
     top: 3px;
-    color: #f2c301;
+    color: var(--tertiary-color);
 }
 
 .about-image {
@@ -2065,7 +2065,7 @@ ul.social_icon_footer li a:hover {
     position: absolute;
     bottom: 30px;
     left: 30px;
-    background: #f2c301;
+    background: var(--tertiary-color);
     padding: 15px 25px;
     border-radius: 5px;
     color: #fff;
@@ -2106,7 +2106,7 @@ ul.social_icon_footer li a:hover {
 }
 
 .mission-box i, .vision-box i {
-    color: #f2c301;
+    color: var(--tertiary-color);
     margin-right: 10px;
 }
 
@@ -2132,13 +2132,13 @@ ul.social_icon_footer li a:hover {
     border-radius: 50%;
     background: #f5f5f5;
     margin: 0 auto 20px;
-    color: #f2c301;
+    color: var(--tertiary-color);
     font-size: 30px;
     transition: all 0.3s ease;
 }
 
 .value-card:hover .value-icon {
-    background: #f2c301;
+    background: var(--tertiary-color);
     color: #fff;
 }
 
@@ -2190,7 +2190,7 @@ ul.social_icon_footer li a:hover {
 }
 
 .member-info .designation {
-    color: #f2c301;
+    color: var(--tertiary-color);
     font-size: 16px;
     margin-bottom: 15px;
 }
@@ -2217,14 +2217,14 @@ ul.social_icon_footer li a:hover {
 }
 
 .social-links a:hover {
-    background: #f2c301;
+    background: var(--tertiary-color);
     color: #fff;
 }
 
 /* Footer Eklentileri */
 footer .reader p i {
     margin-right: 10px;
-    color: #f2c301;
+    color: var(--tertiary-color);
 }
 
 /* Referanslar Sayfası Stilleri */
@@ -2233,7 +2233,7 @@ footer .reader p i {
     font-weight: 600;
     margin-bottom: 30px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #f2c301;
+    border-bottom: 2px solid var(--tertiary-color);
     display: inline-block;
     font-family: 'Playfair Display', serif;
 }
